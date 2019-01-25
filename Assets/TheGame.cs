@@ -14,7 +14,13 @@ public class TheGame : MonoBehaviour
     private static TheGame _instance;
     public static TheGame Instance
     {
-        get { return _instance; }
+        get {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<TheGame>();
+            }
+            return _instance;
+        }
     }
     public List<HistoryItem> items;
 
