@@ -17,7 +17,11 @@ public class HistoryItem : MonoBehaviour
 
     private void OnDisable()
     {
-        TheGame.Instance.items.Remove(this);
+        var theGame = TheGame.Instance;
+        if (theGame)
+        {
+            theGame.items.Remove(this);
+        }
     }
 
     private float previousTimeline = -1;
