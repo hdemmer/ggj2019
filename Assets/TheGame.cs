@@ -23,6 +23,7 @@ public class TheGame : MonoBehaviour
         }
     }
     public List<HistoryItem> items;
+    public Cat cat;
 
     private void Awake()
     {
