@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: no head
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: CAT
+    m_Weight: 1
+  - m_Path: chest
+    m_Weight: 1
+  - m_Path: chest/Head main
+    m_Weight: 0
+  - m_Path: chest/Head main/Head 2
+    m_Weight: 0
+  - m_Path: chest/Head main/Head 2/head non deform
+    m_Weight: 0
+  - m_Path: chest/hip
+    m_Weight: 1
+  - m_Path: chest/hip/but
+    m_Weight: 1
+  - m_Path: chest/hip/but/Left leg Main
+    m_Weight: 1
+  - m_Path: chest/hip/but/Left leg Main/left leg ankle
+    m_Weight: 1
+  - m_Path: chest/hip/but/Left leg Main/left leg ankle/left leg foot
+    m_Weight: 1
+  - m_Path: chest/hip/but/Left leg Main/left leg ankle/left leg foot/left leg foot
+      nondeform
+    m_Weight: 1
+  - m_Path: chest/hip/but/Right leg Main
+    m_Weight: 1
+  - m_Path: chest/hip/but/Right leg Main/right leg ankle
+    m_Weight: 1
+  - m_Path: chest/hip/but/Right leg Main/right leg ankle/right leg foot
+    m_Weight: 1
+  - m_Path: chest/hip/but/Right leg Main/right leg ankle/right leg foot/left leg foot
+      nondeform 1
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main/tail 2
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main/tail 2/tail3
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main/tail 2/tail3/tail 4
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main/tail 2/tail3/tail 4/tail 5
+    m_Weight: 1
+  - m_Path: chest/hip/but/tail_main/tail 2/tail3/tail 4/tail 5/tail non deform
+    m_Weight: 1
+  - m_Path: chest/Main_arm left
+    m_Weight: 1
+  - m_Path: chest/Main_arm left/Arm left 2
+    m_Weight: 1
+  - m_Path: chest/Main_arm left/Arm left 2/hand left
+    m_Weight: 1
+  - m_Path: chest/Main_arm left/Arm left 2/hand left/hand left non deform
+    m_Weight: 1
+  - m_Path: chest/Main_arm right
+    m_Weight: 1
+  - m_Path: chest/Main_arm right/Main Arm right
+    m_Weight: 1
+  - m_Path: chest/Main_arm right/Main Arm right/Main arm right
+    m_Weight: 1
+  - m_Path: chest/Main_arm right/Main Arm right/Main arm right/hand right
+    m_Weight: 1
