@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2919626030101409649}
   - component: {fileID: 1519983230025266325}
   - component: {fileID: 5115818786927506333}
+  - component: {fileID: 3239773357718731026}
+  - component: {fileID: 3061237439324441636}
   m_Layer: 0
   m_Name: old_man_cane
   m_TagString: Untagged
@@ -57,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bd2907745bcf84900afbf746ba991693, type: 3}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +79,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3239773357718731026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5084665347036648706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeline: 9
+  endTimeline: 9
+  opacity: 0
+--- !u!114 &3061237439324441636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5084665347036648706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disappear: 0
+  meshR: {fileID: 0}
+  maxGridSize: 0.2
+  glitchNoise: 0
