@@ -8,6 +8,9 @@ public class HistoryItem : MonoBehaviour
     public int startTimeline = 9;
     public int endTimeline = 9;
     private MeshRenderer mr;
+
+    [SerializeField]
+    private float opacity = 0f;
     
     private void OnEnable()
     {
@@ -34,7 +37,12 @@ public class HistoryItem : MonoBehaviour
             var opacity = TheGame.Instance.CurrentFade(startTimeline, endTimeline);
             
             mr.material.color = new Color(1f,1f,1f,opacity);
-            
+            this.opacity = opacity;
         }
+    }
+
+    public float GetOpacity()
+    {
+        return opacity;
     }
 }
