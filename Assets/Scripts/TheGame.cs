@@ -44,7 +44,10 @@ public class TheGame : MonoBehaviour
     private IEnumerator Start()
     {
         yield return SceneManager.LoadSceneAsync("RoomObjects", LoadSceneMode.Additive);
-        yield return SceneManager.LoadSceneAsync("Room9", LoadSceneMode.Additive);
+        for (var i=1;i<=9;i++)
+        {
+            yield return SceneManager.LoadSceneAsync("Room"+i.ToString(), LoadSceneMode.Additive);
+        }
         yield return null;
         items = GameObject.FindObjectsOfType<HistoryItem>();
         catItems = GameObject.FindObjectsOfType<CatItem>();
