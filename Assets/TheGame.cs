@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -25,6 +26,7 @@ public class TheGame : MonoBehaviour
     }
     public HistoryItem[] items = new HistoryItem[0];
     public Cat cat;
+    public CinemachineVirtualCamera vCam;
 
     private bool _isRunning;
 
@@ -32,15 +34,20 @@ public class TheGame : MonoBehaviour
     {
         slider.value = 1f;
         _instance = this;
+        
+        vCam.enabled = false;
+        cat.gameObject.SetActive(false);
     }
 
     private IEnumerator Start()
     {
-        SceneManager.LoadScene("RoomObjects", LoadSceneMode.Additive);
-
+        yield return SceneManager.LoadSceneAsync("RoomObjects", LoadSceneMode.Additive);
+        yield return null;
         items = GameObject.FindObjectsOfType<HistoryItem>();
+        cat.gameObject.SetActive(true);
+        vCam.enabled = true;
+        cat.CallStart();
         _isRunning = true;
-        yield break;
     }
 
     private void OnDisable()

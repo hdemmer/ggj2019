@@ -22,16 +22,13 @@ public class Cat : MonoBehaviour
 
     public State state;
 
-    private IEnumerator Start()
+    private void Awake()
     {
-        TheGame.Instance.cat = this;
         nma = GetComponent<NavMeshAgent>();
+    }
 
-        while (GameObject.FindObjectsOfType<HistoryItem>().Length == 0)
-        {
-            yield return null;
-        }
-
+    public void CallStart()
+    {
         for (var i = 0; i < 10; i++)
         {
             ChooseTarget();
@@ -41,7 +38,7 @@ public class Cat : MonoBehaviour
 
     private void ChooseTarget()
     {
-        var allItems = GameObject.FindObjectsOfType<HistoryItem>();
+        var allItems = TheGame.Instance.items;
         var randomOne = allItems[Random.Range(0, allItems.Length)];
         QueueItem(randomOne);
     }
