@@ -23,13 +23,24 @@ public class TheGame : MonoBehaviour
             return _instance;
         }
     }
-    public List<HistoryItem> items;
+    public HistoryItem[] items = new HistoryItem[0];
     public Cat cat;
+
+    private bool _isRunning;
 
     private void Awake()
     {
-        SceneManager.LoadScene("RoomObjects", LoadSceneMode.Additive);
+        slider.value = 1f;
         _instance = this;
+    }
+
+    private IEnumerator Start()
+    {
+        SceneManager.LoadScene("RoomObjects", LoadSceneMode.Additive);
+
+        items = GameObject.FindObjectsOfType<HistoryItem>();
+        _isRunning = true;
+        yield break;
     }
 
     private void OnDisable()
@@ -42,7 +53,16 @@ public class TheGame : MonoBehaviour
 
     void Update()
     {
-        timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
+        if (_isRunning)
+        {
+            timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
+        }
+
+        Time.timeScale = _isRunning ? 1f : 0f;
+        foreach (var item in items)
+        {
+            item.CallUpdate(timeline);
+        }
     }
 
     public float CurrentFade(int startTimeline, int endTimeline)

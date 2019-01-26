@@ -15,22 +15,11 @@ public class HistoryItem : MonoBehaviour
 	private void OnEnable()
 	{
 		gc = GetComponent<GlitchController>();
-		TheGame.Instance.items.Add(this);
-	}
-
-	private void OnDisable()
-	{
-		var theGame = TheGame.Instance;
-		if (theGame)
-		{
-			theGame.items.Remove(this);
-		}
 	}
 
 	private float previousTimeline = -1;
-	void Update()
+	public void CallUpdate(float timeline)
 	{
-		var timeline = TheGame.Instance.timeline;
 		if (timeline != previousTimeline && gc != null)
 		{
 			previousTimeline = timeline;
