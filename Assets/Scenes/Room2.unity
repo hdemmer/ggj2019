@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 9e47c9680242d487b888a8cb321c3640,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -123,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lava_lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261059067542277319, guid: d018e6d3342504722885ab7e42c867d9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2856292832627656318, guid: d018e6d3342504722885ab7e42c867d9,
         type: 3}
@@ -227,6 +233,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chair_normal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940102788596239357, guid: 8861399b94eb94e0693b2add6d68fe85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8125624016021643127, guid: 8861399b94eb94e0693b2add6d68fe85,
         type: 3}
@@ -365,6 +376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: television
       objectReference: {fileID: 0}
+    - target: {fileID: 7577362866499717039, guid: 10fb1f80a2b42439ba8ff04914391ca5,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8852725334826483784, guid: 10fb1f80a2b42439ba8ff04914391ca5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -453,6 +469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: book_pile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2461157615117006266, guid: e0db4a6c3119649f187a45161a98c5b8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7518984474078630557, guid: e0db4a6c3119649f187a45161a98c5b8,
         type: 3}
@@ -543,6 +564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair_normal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6940102788596239357, guid: 8861399b94eb94e0693b2add6d68fe85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125624016021643127, guid: 8861399b94eb94e0693b2add6d68fe85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -631,6 +657,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: toy_mouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052554297161936504, guid: 03a9ef0cd6af34203bfadb50de8b29f4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5831517570073152536, guid: 03a9ef0cd6af34203bfadb50de8b29f4,
         type: 3}
@@ -721,6 +752,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: artist_palette
       objectReference: {fileID: 0}
+    - target: {fileID: 7038925397085089779, guid: 58f19322901c5491eaee2f85356710f7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7097618191383245916, guid: 58f19322901c5491eaee2f85356710f7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,6 +845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: carpet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659296145789503339, guid: 7fae9d01beacd4fc5821f4411a086b60,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8486116261830783862, guid: 7fae9d01beacd4fc5821f4411a086b60,
         type: 3}
@@ -905,6 +946,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: floor_walls_windows_attached
       objectReference: {fileID: 0}
+    - target: {fileID: 30110657022997112, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6880579955035744322, guid: 80461b3874b114285af206189d89164d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -979,6 +1025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: table
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371671180220959649, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9103764335029552496, guid: 8c95208b6ae964d4c998a6a88f75094a,
         type: 3}
@@ -1069,6 +1120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair_design
       objectReference: {fileID: 0}
+    - target: {fileID: 8883061332428104689, guid: ce91f68f230974ab2b2919220e9c07ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8867501759842064252, guid: ce91f68f230974ab2b2919220e9c07ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1157,6 +1213,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: tv_stand
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154142558093344307, guid: e838d835b24fc4ed1890c9d71e71ed56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3574103390129943560, guid: e838d835b24fc4ed1890c9d71e71ed56,
         type: 3}
@@ -1247,6 +1308,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6971606883323364215, guid: 2fb4cacf109f24d4cbc833e2d1fa8080,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4780513805333025393, guid: 2fb4cacf109f24d4cbc833e2d1fa8080,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1335,6 +1401,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chair_normal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940102788596239357, guid: 8861399b94eb94e0693b2add6d68fe85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8125624016021643127, guid: 8861399b94eb94e0693b2add6d68fe85,
         type: 3}
@@ -1494,6 +1565,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: flower_pot
       objectReference: {fileID: 0}
+    - target: {fileID: 7643968937565345181, guid: e16d30458ff6a4807bcb766f186f135a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9046018435466813497, guid: e16d30458ff6a4807bcb766f186f135a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1582,6 +1658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376107289936135329, guid: 9d87a3e7cdffb40dd8cdf1e633504087,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3900478347485849497, guid: 9d87a3e7cdffb40dd8cdf1e633504087,
         type: 3}
