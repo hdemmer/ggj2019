@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class Cat : MonoBehaviour
 {
@@ -37,11 +38,23 @@ public class Cat : MonoBehaviour
         var allItems = new List<CatItem>( TheGame.Instance.catItems);
         for (var i = 9; i >= 1; i--)
         {
-            var item = allItems.Find((catItem) => catItem.startTimeline == i);
-            if (item != null)
+            var distance = 3;
+            if (distance > i) distance = i;
+            var itemsInThisStage = allItems.FindAll((catItem) =>
             {
-                Debug.Log("ADDING " + item);
-                targets.Add(item);
+                return catItem.startTimeline >= i && i <= catItem.endTimeline + distance;
+            });
+            for (var j = 0; j < 2; j++)
+            {
+                if (itemsInThisStage.Count > 0)
+                {
+                    var pick = itemsInThisStage[Random.Range(0, itemsInThisStage.Count)];
+                    if (!targets.Contains(pick))
+                    {
+                        Debug.Log("ADDING " + pick);
+                        targets.Add(pick);
+                    }
+                }
             }
         }
         Do(Wander());
@@ -138,7 +151,11 @@ public class Cat : MonoBehaviour
         var targetCollider = target.GetComponent<Collider>();
         Debug.Log("SEEK "+ target);
 
-        var destination = target.transform.position + target.transform.forward;
+        var targetPos = target.transform.position;
+        var offset = (targetPos * -1f).normalized;
+        if (offset.x < 0f) offset.x = 0.5f;
+        if (offset.z < 0f) offset.z = 0.5f;
+        var destination = targetPos + offset;
         destination.y = 0f;
         if (!nma.SetDestination(destination))
         {
