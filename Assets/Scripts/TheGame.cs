@@ -50,7 +50,7 @@ public class TheGame : MonoBehaviour
 
     private IEnumerator Start()
     {
-        for (var i=2;i<=2;i++)
+        for (var i=1;i<=9;i++)
         {
             yield return SceneManager.LoadSceneAsync("Room"+i.ToString(), LoadSceneMode.Additive);
         }
