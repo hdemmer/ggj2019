@@ -36,6 +36,12 @@ public class Cat : MonoBehaviour
         Do(Wander());
     }
 
+    private void OnTriggerEnter( Collider other)
+    {
+        // TODO
+        //Debug.LogWarning("TERRIFIED BY " + other.name);
+    }
+
     private void ChooseTarget()
     {
         var allItems = TheGame.Instance.catItems;
