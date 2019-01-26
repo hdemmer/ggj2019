@@ -11,6 +11,8 @@ public class HistoryItem : MonoBehaviour
 
 	[SerializeField]
 	private float opacity = 0f;
+	
+	
 
 	private void OnEnable()
 	{

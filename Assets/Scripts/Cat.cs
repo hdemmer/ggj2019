@@ -10,7 +10,7 @@ public class Cat : MonoBehaviour
     private NavMeshAgent nma;
     private Coroutine currentBehaviour;
     
-    public readonly List<Collider> touchingColliders = new List<Collider>();
+    public List<Collider> touchingColliders = new List<Collider>();
 
     [SerializeField]
     private float courage = 0f;
@@ -126,9 +126,11 @@ public class Cat : MonoBehaviour
         }
 
         var target = targets.Dequeue();
+        var targetCollider = target.GetComponent<Collider>();
         Debug.Log("SEEK "+ target);
 
         var destination = target.transform.position + target.transform.forward;
+        destination.y = 0f;
         if (!nma.SetDestination(destination))
         {
             Do(Wander());
@@ -139,7 +141,8 @@ public class Cat : MonoBehaviour
         {
             var d = (transform.position - destination);
             d.y = 0f;
-            if (d.sqrMagnitude < 0.1f)
+            Debug.DrawLine(transform.position, destination, Color.magenta, 0.1f);
+            if (d.sqrMagnitude < 0.1f || (targetCollider != null && touchingColliders.Contains(targetCollider)))
             {
                 // there!
                 Debug.Log("THERE");
@@ -153,7 +156,7 @@ public class Cat : MonoBehaviour
                 else
                 {
                     Debug.Log("CONTEMPLATING");
-                    yield return new WaitForSeconds(Random.Range(0.5f, 1f)); // contemplate
+                    yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
                     ChooseTarget();
                     Do(SeekNext());
                 }
