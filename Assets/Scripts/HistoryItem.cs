@@ -20,6 +20,7 @@ public class HistoryItem : MonoBehaviour
 		{
 			var meshRenderer = mrs[i];
 			var gc = meshRenderer.gameObject.AddComponent<GlitchController>();
+			gc.meshR = meshRenderer;
 			gc.material = meshRenderer.material;
 			gcs[i] = gc;
 		}
