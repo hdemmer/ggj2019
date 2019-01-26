@@ -23,6 +23,8 @@ public class GlitchController : MonoBehaviour
 
 	private float prevGlitch = -1f;
 	private float prevDisappear = -1f;
+
+	private float glitchDisappear = 0f;
 	
 	public void CallUpdate()
 	{
@@ -36,8 +38,57 @@ public class GlitchController : MonoBehaviour
 				Mathf.Lerp(minGridSize, maxGridSize,
 					glitchValue + glitchValue * (Mathf.PerlinNoise(3f, Time.time * 8) * 2f - 1f) * glitchNoise));
 			material.SetFloat(_colorGlitchValue, glitchValue);
-			material.SetFloat(_disappear, disappear);
+			material.SetFloat(_disappear, disappear + glitchDisappear);
 			meshR.enabled = (disappear < 1f);
+		}
+	}
+
+	private Coroutine _glitchRoutine;
+	public void StartGlitch()
+	{
+		if (_glitchRoutine != null)
+		{
+			StopCoroutine(_glitchRoutine);
+			_glitchRoutine = null;
+		}
+
+		_glitchRoutine = StartCoroutine(GlitchRoutine());
+	}
+
+	public void StopGlitch()
+	{
+		if (_glitchRoutine != null)
+		{
+			StopCoroutine(_glitchRoutine);
+			_glitchRoutine = null;
+		}
+
+		_glitchRoutine = StartCoroutine(StopGlitchRoutine());
+	}
+
+	private IEnumerator GlitchRoutine()
+	{
+		var t = glitchDisappear;
+		while (true)
+		{
+			var dt = Time.deltaTime;
+			t += Random.Range(-1f * dt, 2f * dt);
+			t = Mathf.Clamp01(t);
+
+			glitchDisappear = t * 0.5f;
+			
+			material.SetFloat(_disappear, disappear + glitchDisappear);
+			yield return null;
+		}
+	}
+
+	private IEnumerator StopGlitchRoutine()
+	{
+		while (glitchDisappear > 0.01f)
+		{
+			glitchDisappear -= Time.deltaTime;
+			material.SetFloat(_disappear, disappear + glitchDisappear);
+			yield return null;
 		}
 	}
 }

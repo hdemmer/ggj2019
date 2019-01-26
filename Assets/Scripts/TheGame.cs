@@ -46,6 +46,45 @@ public class TheGame : MonoBehaviour
         
         vCam.enabled = false;
         cat.gameObject.SetActive(false);
+
+        var sl = slider.GetComponent<SliderListener>();
+        sl.onPointerDown = OnPointerDown;
+        sl.onPointerUp = OnPointerUp;
+    }
+
+    private Coroutine lerpRoutine;
+    private void OnPointerUp()
+    {
+        if (lerpRoutine != null)
+        {
+            StopCoroutine(lerpRoutine);
+        }
+        lerpRoutine = null;
+        StartCoroutine(LerpSlider());
+    }
+
+    private void OnPointerDown()
+    {
+        if (lerpRoutine != null)
+        {
+            StopCoroutine(lerpRoutine);
+        }
+        lerpRoutine = null;
+    }
+
+    IEnumerator LerpSlider()
+    {
+        var origin = slider.value;
+        var closest = Mathf.Clamp01(Mathf.Round(origin * 8) / 8f);
+        var t = 0f;
+        var duration = 0.5f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            slider.value = Mathf.Lerp(origin, closest, t / duration);
+            yield return null;
+        }
+        slider.value = closest;
     }
 
     private IEnumerator Start()
@@ -78,6 +117,7 @@ public class TheGame : MonoBehaviour
 
         if (!_isRunning) return;
         
+        var val = slider.value;
         timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
 
         dizziness -= dizzyDecay.Evaluate(dizziness) * Time.deltaTime;

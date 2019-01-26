@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -269,6 +269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274973565}
   - component: {fileID: 274973566}
+  - component: {fileID: 274973567}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -347,6 +348,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &274973567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274973564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3c317f0288d46dfb5f30971d085d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &663034697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5333452694811184695, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
@@ -714,20 +727,20 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 1.0471156
+      outSlope: 1.0471156
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.16895069
     - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      time: 0.525177
+      value: 0.9975548
+      inSlope: 0.37274602
+      outSlope: 0.37274602
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.42465442
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

@@ -11,6 +11,8 @@ public class HistoryItem : MonoBehaviour
 
 	[SerializeField]
 	private float opacity = 0f;
+	
+	
 
 	private void OnEnable()
 	{
@@ -19,7 +21,11 @@ public class HistoryItem : MonoBehaviour
 		for (var i = 0; i < mrs.Length; i++)
 		{
 			var meshRenderer = mrs[i];
-			var gc = meshRenderer.gameObject.AddComponent<GlitchController>();
+			var gc = meshRenderer.gameObject.GetComponent<GlitchController>();
+			if (!gc)
+			{
+				gc = meshRenderer.gameObject.AddComponent<GlitchController>();
+			}
 			gc.meshR = meshRenderer;
 			gc.material = meshRenderer.material;
 			gcs[i] = gc;
@@ -48,5 +54,21 @@ public class HistoryItem : MonoBehaviour
 	public float GetOpacity()
 	{
 		return opacity;
+	}
+
+	public void StartGlitch()
+	{
+		foreach (var gc in gcs)
+		{
+			gc.StartGlitch();
+		}
+	}
+	
+	public void StopGlitch()
+	{
+		foreach (var gc in gcs)
+		{
+			gc.StopGlitch();
+		}
 	}
 }
