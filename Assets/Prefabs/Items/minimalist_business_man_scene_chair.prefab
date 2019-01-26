@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3277656627015573750}
   - component: {fileID: 2936425365285476178}
   - component: {fileID: 2226547115474942900}
+  - component: {fileID: 2730711554251895659}
   m_Layer: 0
   m_Name: minimalist_business_man_scene_chair
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 4
   endTimeline: 4
+  gcs: []
   opacity: 0
 --- !u!114 &2226547115474942900
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &2730711554251895659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6404237436534504731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4105299, y: 5.938781, z: 5.311419}
+  m_Center: {x: 0, y: -0.022576576, z: 0.6908905}

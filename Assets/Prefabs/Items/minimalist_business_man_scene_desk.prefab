@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5344180492481543282}
   - component: {fileID: 6801145708920164089}
   - component: {fileID: 7338521562032571934}
+  - component: {fileID: 4590349349325557084}
   m_Layer: 0
   m_Name: minimalist_business_man_scene_desk
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 4
   endTimeline: 4
+  gcs: []
   opacity: 0
 --- !u!114 &7338521562032571934
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &4590349349325557084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8242343206629442709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.0962763, y: 2.9772427, z: 3.2634394}
+  m_Center: {x: 0, y: 0.031876333, z: -0.441105}

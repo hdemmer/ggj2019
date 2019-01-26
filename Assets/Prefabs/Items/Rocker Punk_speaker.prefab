@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3246526603048272889}
   - component: {fileID: 3258927370634385414}
   - component: {fileID: 1256223767349037699}
+  - component: {fileID: 348472709712010643}
   m_Layer: 0
   m_Name: Rocker Punk_speaker
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 8
+  gcs: []
   opacity: 0
 --- !u!114 &1256223767349037699
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &348472709712010643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4886566016461176477}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.71091014, y: 1.7460421, z: 2.1641848}
+  m_Center: {x: 0.000000059604645, y: -0.00000038743028, z: 0}

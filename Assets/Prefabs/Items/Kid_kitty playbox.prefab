@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5142846237034492805}
   - component: {fileID: 7205374378415156468}
   - component: {fileID: 8374996289955142361}
+  - component: {fileID: 295449300217894544}
   m_Layer: 0
   m_Name: Kid_kitty playbox
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  gcs: []
   opacity: 0
 --- !u!114 &8374996289955142361
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &295449300217894544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009151520331835309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5853412, y: 2.585342, z: 4.516133}
+  m_Center: {x: 0, y: -3.201799e-14, z: 2.2530663}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6996693454471395979}
   - component: {fileID: 648813102094059784}
   - component: {fileID: 262149867942027319}
+  - component: {fileID: 3591271080276861358}
   m_Layer: 0
   m_Name: artist_palette
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &262149867942027319
 MonoBehaviour:
@@ -109,5 +111,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &3591271080276861358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7038925397085089779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5044413, y: 0.44829112, z: 0.022283826}
+  m_Center: {x: 0.02529458, y: -0.016794745, z: 0.011141913}

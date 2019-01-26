@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8334305348910581902}
   - component: {fileID: 8303997697657702550}
   - component: {fileID: 6929096025448795372}
+  - component: {fileID: 5621146350259670729}
   m_Layer: 0
   m_Name: table
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &6929096025448795372
 MonoBehaviour:
@@ -109,5 +111,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &5621146350259670729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371671180220959649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999999, y: 3.0000005, z: 1.0966697}
+  m_Center: {x: 0, y: 0, z: -0.39249042}

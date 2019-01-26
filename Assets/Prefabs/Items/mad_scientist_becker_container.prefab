@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 986559374735190718}
   - component: {fileID: 8755601870127817946}
   - component: {fileID: 8446564237904991407}
+  - component: {fileID: 6093842685624735798}
   m_Layer: 0
   m_Name: mad_scientist_becker_container
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &8446564237904991407
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &6093842685624735798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5845476572058499160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0210063, y: 1.0210066, z: 1.4571289}
+  m_Center: {x: 0, y: 0, z: 0.72856444}

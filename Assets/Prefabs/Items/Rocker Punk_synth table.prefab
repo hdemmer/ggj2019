@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5924375051291115587}
   - component: {fileID: 6537210798681425833}
   - component: {fileID: 2001191301507515649}
-  - component: {fileID: 5865215399676893086}
   - component: {fileID: 1932176561631963918}
+  - component: {fileID: 6590099728480458133}
+  - component: {fileID: 3201756276870646199}
   m_Layer: 0
   m_Name: Rocker Punk_synth table
   m_TagString: Untagged
@@ -79,21 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5865215399676893086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTimeline: 8
-  endTimeline: 8
-  opacity: 0
 --- !u!114 &1932176561631963918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +98,32 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!114 &6590099728480458133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191006612294317287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80da3348cdde4650b905aa7c6dbfc88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeline: 8
+  endTimeline: 8
+  gcs: []
+  opacity: 0
+--- !u!65 &3201756276870646199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191006612294317287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6931229, y: 8.272354, z: 1.1812259}
+  m_Center: {x: 0, y: 0, z: -0.40938723}

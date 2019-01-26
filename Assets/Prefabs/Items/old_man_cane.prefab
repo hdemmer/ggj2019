@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5115818786927506333}
   - component: {fileID: 3239773357718731026}
   - component: {fileID: 3061237439324441636}
+  - component: {fileID: 1107165621382206673}
   m_Layer: 0
   m_Name: old_man_cane
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &3061237439324441636
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &1107165621382206673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5084665347036648706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9295001, y: 0.5379392, z: 4.2308483}
+  m_Center: {x: -0.6916313, y: -0.000000010398072, z: 2.1154244}

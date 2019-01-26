@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 930607829950888954}
   - component: {fileID: 302545321202748082}
   - component: {fileID: 288092453227568545}
+  - component: {fileID: 6863055656882756654}
   m_Layer: 0
   m_Name: cat_milk_thingy
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &288092453227568545
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &6863055656882756654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331544573291541229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2698817, y: 1.2698821, z: 0.34772417}
+  m_Center: {x: 0.000000029802322, y: -0.00000002980233, z: 0.17386208}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5800956320356847734}
   - component: {fileID: 7592488865971722566}
   - component: {fileID: 4655235540663053962}
+  - component: {fileID: 7353562135433415671}
   m_Layer: 0
   m_Name: Kid_box
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  gcs: []
   opacity: 0
 --- !u!114 &4655235540663053962
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &7353562135433415671
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8996937533131319579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33025974, y: 0.5817417, z: 0.24523745}
+  m_Center: {x: -3.5201548e-15, y: 0.000000014901161, z: 0.00000003725291}

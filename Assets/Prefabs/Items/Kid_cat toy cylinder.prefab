@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1503024960684308726}
   - component: {fileID: 3101955929241800066}
   - component: {fileID: 6721539352519099067}
+  - component: {fileID: 3749705951577699234}
   m_Layer: 0
   m_Name: Kid_cat toy cylinder
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  gcs: []
   opacity: 0
 --- !u!114 &6721539352519099067
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &3749705951577699234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3734210728275749657}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.778325, y: 1.7973795, z: 2.0279393}
+  m_Center: {x: 0.00000005960466, y: 0.009526612, z: 1.0089694}

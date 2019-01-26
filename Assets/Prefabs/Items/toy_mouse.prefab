@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2283333884620820464}
   - component: {fileID: 5351718940098680347}
   - component: {fileID: 7287019740827415235}
+  - component: {fileID: 5626843520904669755}
   m_Layer: 0
   m_Name: toy_mouse
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &7287019740827415235
 MonoBehaviour:
@@ -109,5 +111,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &5626843520904669755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052554297161936504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.41578868, y: 0.5936174, z: 1.5010847}
+  m_Center: {x: -0.17785074, y: 0.0017960072, z: -0.2832697}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6990756132398344705}
   - component: {fileID: 4370322964545981481}
   - component: {fileID: 1082978273654250563}
+  - component: {fileID: 8943061012918224570}
   m_Layer: 0
   m_Name: lava_lamp
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
 --- !u!114 &1082978273654250563
 MonoBehaviour:
@@ -109,5 +111,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &8943061012918224570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261059067542277319}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3757077, y: 0.36999997, z: 1.4428637}
+  m_Center: {x: 0, y: -0.000000007450582, z: 0.72143185}

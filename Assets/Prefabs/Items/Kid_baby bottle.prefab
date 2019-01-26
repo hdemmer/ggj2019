@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9142771018691672726}
   - component: {fileID: 5076670520787909520}
   - component: {fileID: 756225100250637227}
+  - component: {fileID: 3814194391401338368}
   m_Layer: 0
   m_Name: Kid_baby bottle
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  gcs: []
   opacity: 0
 --- !u!114 &756225100250637227
 MonoBehaviour:
@@ -112,3 +114,17 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!136 &3814194391401338368
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77169141439509746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19
+  m_Height: 1.86
+  m_Direction: 2
+  m_Center: {x: 0, y: -0.01, z: 0.59}

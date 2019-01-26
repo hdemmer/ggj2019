@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3075340488693376763}
   - component: {fileID: 6112181562406048731}
   - component: {fileID: 675994334084424874}
+  - component: {fileID: 1116304866305155839}
   m_Layer: 0
   m_Name: Rocker Punk_Portrait Painting
   m_TagString: Untagged
@@ -94,6 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 8
+  gcs: []
   opacity: 0
 --- !u!114 &675994334084424874
 MonoBehaviour:
@@ -113,3 +115,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &1116304866305155839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633684014256040447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.22267, y: 1.7612308, z: 0.22131212}
+  m_Center: {x: 0, y: 0, z: 0.11065606}

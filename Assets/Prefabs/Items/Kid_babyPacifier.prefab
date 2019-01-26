@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 756212819775514320}
   - component: {fileID: 6003054285767708495}
   - component: {fileID: 4633739899550191964}
+  - component: {fileID: 7175432275451482091}
   m_Layer: 0
   m_Name: Kid_babyPacifier
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  gcs: []
   opacity: 0
 --- !u!114 &4633739899550191964
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &7175432275451482091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674220014378322634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.8544364, y: 2.9776833, z: 3.094874}
+  m_Center: {x: -2.4161727, y: -0.00000014061314, z: 0.000000041602753}

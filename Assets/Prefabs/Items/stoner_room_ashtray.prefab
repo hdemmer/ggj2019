@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6898379985431851532}
   - component: {fileID: 3636360127483794515}
   - component: {fileID: 750753709962682838}
+  - component: {fileID: 298728093361166910}
   m_Layer: 0
   m_Name: stoner_room_ashtray
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 8
+  gcs: []
   opacity: 0
 --- !u!114 &750753709962682838
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &298728093361166910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490019860064335102}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31531748, y: 0.31531757, z: 0.07702537}
+  m_Center: {x: 0, y: 0, z: 0.038512684}

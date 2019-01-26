@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4860640987745633193}
   - component: {fileID: 6667143205694055707}
   - component: {fileID: 729806190028559674}
+  - component: {fileID: 3401844933181074976}
   m_Layer: 0
   m_Name: RockerPunk_small Pianting
   m_TagString: Untagged
@@ -93,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 8
+  gcs: []
   opacity: 0
 --- !u!114 &729806190028559674
 MonoBehaviour:
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &3401844933181074976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3191510358381838847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2226702, y: 1.7612313, z: 0.22131212}
+  m_Center: {x: 1.6042077e-15, y: -1.5725172e-15, z: 0.11065606}
