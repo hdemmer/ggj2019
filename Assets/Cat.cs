@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Cat : MonoBehaviour
 {
-    private readonly Queue<HistoryItem> targets = new Queue<HistoryItem>();
+    private readonly Queue<CatItem> targets = new Queue<CatItem>();
     
     private NavMeshAgent nma;
     private Coroutine currentBehaviour;
@@ -38,9 +38,12 @@ public class Cat : MonoBehaviour
 
     private void ChooseTarget()
     {
-        var allItems = TheGame.Instance.items;
-        var randomOne = allItems[Random.Range(0, allItems.Length)];
-        QueueItem(randomOne);
+        var allItems = TheGame.Instance.catItems;
+        if (allItems.Length > 0)
+        {
+            var randomOne = allItems[Random.Range(0, allItems.Length)];
+            QueueItem(randomOne);
+        }
     }
 
     private void Stop()
@@ -148,7 +151,7 @@ public class Cat : MonoBehaviour
         }
     }
 
-    private void QueueItem(HistoryItem item)
+    private void QueueItem(CatItem item)
     {
         targets.Enqueue(item);
     }

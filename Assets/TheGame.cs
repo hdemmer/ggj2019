@@ -25,6 +25,8 @@ public class TheGame : MonoBehaviour
         }
     }
     public HistoryItem[] items = new HistoryItem[0];
+    public CatItem[] catItems = new CatItem[0];
+    public HistoryRoom[] historyRooms = new HistoryRoom[0]; 
     public Cat cat;
     public CinemachineVirtualCamera vCam;
 
@@ -42,8 +44,11 @@ public class TheGame : MonoBehaviour
     private IEnumerator Start()
     {
         yield return SceneManager.LoadSceneAsync("RoomObjects", LoadSceneMode.Additive);
+        yield return SceneManager.LoadSceneAsync("Room9", LoadSceneMode.Additive);
         yield return null;
         items = GameObject.FindObjectsOfType<HistoryItem>();
+        catItems = GameObject.FindObjectsOfType<CatItem>();
+        historyRooms = GameObject.FindObjectsOfType<HistoryRoom>();
         cat.gameObject.SetActive(true);
         vCam.enabled = true;
         cat.CallStart();
