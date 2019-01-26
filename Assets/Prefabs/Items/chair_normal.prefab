@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1642233517771601639}
   - component: {fileID: 6190733328656086446}
   - component: {fileID: 6678111627050933592}
+  - component: {fileID: 1181050347524216123}
   m_Layer: 0
   m_Name: chair_normal
   m_TagString: Untagged
@@ -109,5 +110,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &1181050347524216123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940102788596239357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1109458, y: 0.845638, z: 0.7961651}
+  m_Center: {x: 0.20029041, y: 0.00000019371514, z: 0.39808255}

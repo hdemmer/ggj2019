@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 900660171549829780}
   - component: {fileID: 8438395015231490171}
   - component: {fileID: 4579055282573974187}
+  - component: {fileID: 415637902209304238}
   m_Layer: 0
   m_Name: tv_stand
   m_TagString: Untagged
@@ -109,5 +110,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &415637902209304238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154142558093344307}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4076686, y: 1.0424114, z: 0.77194405}
+  m_Center: {x: 0, y: 0, z: 0.38597202}

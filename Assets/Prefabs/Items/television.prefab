@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4372863410740044423}
   - component: {fileID: 5210139751444622483}
   - component: {fileID: 1896016055811173337}
+  - component: {fileID: 2975914694320084543}
   m_Layer: 0
   m_Name: television
   m_TagString: Untagged
@@ -109,5 +110,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &2975914694320084543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7577362866499717039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7579755, y: 1.3649819, z: 1.1439723}
+  m_Center: {x: 0, y: 0.29969507, z: 0.4201848}

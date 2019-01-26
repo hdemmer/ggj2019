@@ -50,7 +50,7 @@ public class TheGame : MonoBehaviour
 
     private IEnumerator Start()
     {
-        for (var i=1;i<=9;i++)
+        for (var i=2;i<=2;i++)
         {
             yield return SceneManager.LoadSceneAsync("Room"+i.ToString(), LoadSceneMode.Additive);
         }
@@ -99,13 +99,14 @@ public class TheGame : MonoBehaviour
                 item.CallUpdate(timeline);
             }
 
-            foreach (var historyRoom in historyRooms)
-            {
-                historyRoom.CallUpdate(timeline);
-            }
             _previousTimeline = timeline;
-
         }
+        
+        foreach (var historyRoom in historyRooms)
+        {
+            historyRoom.CallUpdate(timeline, cat);
+        }
+
     }
 
     public float CurrentFade(int startTimeline, int endTimeline)

@@ -9,6 +9,8 @@ public class Cat : MonoBehaviour
     
     private NavMeshAgent nma;
     private Coroutine currentBehaviour;
+    
+    public readonly List<Collider> touchingColliders = new List<Collider>();
 
     [SerializeField]
     private float courage = 0f;
@@ -25,6 +27,7 @@ public class Cat : MonoBehaviour
     private void Awake()
     {
         nma = GetComponent<NavMeshAgent>();
+        GetComponent<Collider>().isTrigger = true;
     }
 
     public void CallStart()
@@ -38,8 +41,12 @@ public class Cat : MonoBehaviour
 
     private void OnTriggerEnter( Collider other)
     {
-        // TODO
-        //Debug.LogWarning("TERRIFIED BY " + other.name);
+        touchingColliders.Add(other);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        touchingColliders.Remove(other);
     }
 
     private void ChooseTarget()

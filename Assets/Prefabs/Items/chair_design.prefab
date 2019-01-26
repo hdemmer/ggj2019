@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2486218197609911068}
   - component: {fileID: 8086852333420624080}
   - component: {fileID: 5234834163854051732}
+  - component: {fileID: 1179799453421050095}
   m_Layer: 0
   m_Name: chair_design
   m_TagString: Untagged
@@ -109,5 +110,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &1179799453421050095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8883061332428104689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4088511, y: 2.9973724, z: 5.4083004}
+  m_Center: {x: 0.55555135, y: -0.92473125, z: 2.65415}
