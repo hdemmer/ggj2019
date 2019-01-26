@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -629,7 +629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 3.100006, y: 29}
+  m_AnchoredPosition: {x: 3.0999756, y: 29}
   m_SizeDelta: {x: -36.9, y: 28.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274973566
@@ -694,6 +694,8 @@ GameObject:
   - component: {fileID: 314121271}
   - component: {fileID: 314121270}
   - component: {fileID: 314121269}
+  - component: {fileID: 314121274}
+  - component: {fileID: 314121273}
   m_Layer: 0
   m_Name: MilkBowl (8)
   m_TagString: Untagged
@@ -760,7 +762,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -788,6 +790,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314121267}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &314121273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314121267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &314121274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314121267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &354717821
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +832,8 @@ GameObject:
   - component: {fileID: 354717825}
   - component: {fileID: 354717824}
   - component: {fileID: 354717823}
+  - component: {fileID: 354717828}
+  - component: {fileID: 354717827}
   m_Layer: 0
   m_Name: MilkBowl (6)
   m_TagString: Untagged
@@ -867,7 +900,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -895,6 +928,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354717821}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &354717827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354717821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &354717828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354717821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407618641
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,6 +970,8 @@ GameObject:
   - component: {fileID: 407618644}
   - component: {fileID: 407618643}
   - component: {fileID: 407618642}
+  - component: {fileID: 407618648}
+  - component: {fileID: 407618647}
   m_Layer: 0
   m_Name: MilkBowl (2)
   m_TagString: Untagged
@@ -960,7 +1024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1002,6 +1066,35 @@ Transform:
   m_Father: {fileID: 490680363}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &407618647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407618641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &407618648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407618641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &490680362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1150,8 @@ GameObject:
   - component: {fileID: 545129516}
   - component: {fileID: 545129515}
   - component: {fileID: 545129514}
+  - component: {fileID: 545129519}
+  - component: {fileID: 545129518}
   m_Layer: 0
   m_Name: MilkBowl (9)
   m_TagString: Untagged
@@ -1123,7 +1218,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1151,6 +1246,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545129512}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &545129518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545129512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &545129519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545129512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712386575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1354,8 @@ GameObject:
   - component: {fileID: 719153655}
   - component: {fileID: 719153654}
   - component: {fileID: 719153658}
+  - component: {fileID: 719153660}
+  - component: {fileID: 719153659}
   m_Layer: 0
   m_Name: MilkBowl
   m_TagString: Untagged
@@ -1267,7 +1393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1324,6 +1450,35 @@ MonoBehaviour:
   startTimeline: 2
   endTimeline: 4
   opacity: 0
+--- !u!114 &719153659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719153653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &719153660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719153653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &821309936
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1492,8 @@ GameObject:
   - component: {fileID: 821309939}
   - component: {fileID: 821309938}
   - component: {fileID: 821309937}
+  - component: {fileID: 821309943}
+  - component: {fileID: 821309942}
   m_Layer: 0
   m_Name: MilkBowl (1)
   m_TagString: Untagged
@@ -1389,7 +1546,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1431,6 +1588,35 @@ Transform:
   m_Father: {fileID: 490680363}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821309942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821309936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &821309943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821309936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925792025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1630,8 @@ GameObject:
   - component: {fileID: 925792029}
   - component: {fileID: 925792028}
   - component: {fileID: 925792027}
+  - component: {fileID: 925792032}
+  - component: {fileID: 925792031}
   m_Layer: 0
   m_Name: MilkBowl (3)
   m_TagString: Untagged
@@ -1510,7 +1698,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1538,6 +1726,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925792025}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &925792031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925792025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &925792032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925792025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &959048107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,6 +1768,8 @@ GameObject:
   - component: {fileID: 959048111}
   - component: {fileID: 959048110}
   - component: {fileID: 959048109}
+  - component: {fileID: 959048114}
+  - component: {fileID: 959048113}
   m_Layer: 0
   m_Name: MilkBowl (10)
   m_TagString: Untagged
@@ -1617,7 +1836,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1645,6 +1864,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959048107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &959048113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959048107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &959048114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959048107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &996813482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,6 +1980,8 @@ GameObject:
   - component: {fileID: 1040031516}
   - component: {fileID: 1040031515}
   - component: {fileID: 1040031514}
+  - component: {fileID: 1040031519}
+  - component: {fileID: 1040031518}
   m_Layer: 0
   m_Name: MilkBowl (5)
   m_TagString: Untagged
@@ -1798,7 +2048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1826,6 +2076,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040031512}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1040031518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040031512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &1040031519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040031512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1043156667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,12 +2548,12 @@ PrefabInstance:
     - target: {fileID: 5333452694811184694, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.07337534
+      value: 0.0733755
       objectReference: {fileID: 0}
     - target: {fileID: 5333452694811184694, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.020036258
+      value: -0.020036303
       objectReference: {fileID: 0}
     - target: {fileID: 5333452694811184694, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
         type: 3}
@@ -2342,6 +2621,8 @@ GameObject:
   - component: {fileID: 1529091460}
   - component: {fileID: 1529091459}
   - component: {fileID: 1529091458}
+  - component: {fileID: 1529091463}
+  - component: {fileID: 1529091462}
   m_Layer: 0
   m_Name: MilkBowl (11)
   m_TagString: Untagged
@@ -2408,7 +2689,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2436,6 +2717,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529091456}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1529091462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529091456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &1529091463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529091456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1558493005
 GameObject:
   m_ObjectHideFlags: 0
@@ -2614,6 +2924,8 @@ GameObject:
   - component: {fileID: 1897493932}
   - component: {fileID: 1897493931}
   - component: {fileID: 1897493930}
+  - component: {fileID: 1897493935}
+  - component: {fileID: 1897493934}
   m_Layer: 0
   m_Name: MilkBowl (4)
   m_TagString: Untagged
@@ -2680,7 +2992,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2708,6 +3020,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897493928}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1897493934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897493928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &1897493935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897493928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1973053460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +3062,8 @@ GameObject:
   - component: {fileID: 1973053464}
   - component: {fileID: 1973053463}
   - component: {fileID: 1973053462}
+  - component: {fileID: 1973053467}
+  - component: {fileID: 1973053466}
   m_Layer: 0
   m_Name: MilkBowl (7)
   m_TagString: Untagged
@@ -2787,7 +3130,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1adf11c566eb64918b4dfd328e4d4806, type: 2}
+  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2815,3 +3158,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973053460}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1973053466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973053460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
+--- !u!114 &1973053467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973053460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2106225141905d64cb98c0261d0de888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
