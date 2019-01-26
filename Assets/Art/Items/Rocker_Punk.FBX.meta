@@ -1,29 +1,14 @@
 fileFormatVersion: 2
-guid: 90701c65af68d47d78d3fbe2351a2a52
+guid: d319c930ee9d7481980126800e11d49f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: can
-    100004: canlid
-    100006: Point
     400000: //RootNode
-    400002: can
-    400004: canlid
-    400006: Point
     2100000: No Name
-    2100002: can.001
-    2100004: m_can_lid
-    2100006: m_can_tin
-    2300000: can
-    2300002: canlid
-    2300004: //RootNode
-    3300000: can
-    3300002: canlid
-    3300004: //RootNode
-    4300000: canlid
-    4300002: can
-    10800000: Point
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Emissive Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -55,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
