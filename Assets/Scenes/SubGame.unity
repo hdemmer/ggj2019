@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -602,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 6
   endTimeline: 6
+  opacity: 0
 --- !u!65 &314121270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -674,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &314121274
@@ -739,6 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 4
   endTimeline: 4
+  opacity: 0
 --- !u!65 &354717824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -811,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &354717828
@@ -862,6 +864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 9
+  opacity: 0
 --- !u!65 &407618643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -948,7 +951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &407618648
@@ -1055,6 +1058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 7
   endTimeline: 7
+  opacity: 0
 --- !u!65 &545129515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1127,7 +1131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &545129519
@@ -1316,6 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 2
   endTimeline: 4
+  opacity: 0
 --- !u!114 &719153659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,7 +1335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &719153660
@@ -1381,6 +1386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 1
   endTimeline: 2
+  opacity: 0
 --- !u!65 &821309938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1467,7 +1473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &821309943
@@ -1532,6 +1538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 1
   endTimeline: 1
+  opacity: 0
 --- !u!65 &925792028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1604,7 +1611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &925792032
@@ -1669,6 +1676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 8
   endTimeline: 8
+  opacity: 0
 --- !u!65 &959048110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1741,7 +1749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &959048114
@@ -1880,6 +1888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 3
   endTimeline: 3
+  opacity: 0
 --- !u!65 &1040031515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1952,7 +1961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &1040031519
@@ -2233,6 +2242,10 @@ MonoBehaviour:
   slider: {fileID: 274973566}
   timeline: 0
   items: []
+  catItems: []
+  historyRooms: []
+  cat: {fileID: 0}
+  vCam: {fileID: 0}
 --- !u!4 &1290708337
 Transform:
   m_ObjectHideFlags: 0
@@ -2424,6 +2437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  opacity: 0
 --- !u!65 &1529091459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2496,7 +2510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &1529091463
@@ -2726,6 +2740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 2
   endTimeline: 2
+  opacity: 0
 --- !u!65 &1897493931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2798,7 +2813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &1897493935
@@ -2863,6 +2878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 5
   endTimeline: 5
+  opacity: 0
 --- !u!65 &1973053463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2935,7 +2951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
-  disapear: 0
+  disappear: 0
   maxGridSize: 0.2
   glitchNoise: 0
 --- !u!114 &1973053467
@@ -2961,6 +2977,7 @@ GameObject:
   - component: {fileID: 2031986811}
   - component: {fileID: 2031986810}
   - component: {fileID: 2031986809}
+  - component: {fileID: 2031986812}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3032,3 +3049,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+--- !u!114 &2031986812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031986808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f731d4b1ebe322e439ee7c453e96c7b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 147c630603b4f264495ff71bd701b606, type: 2}

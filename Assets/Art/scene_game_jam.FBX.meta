@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 56325c96977c04b878ec57c5e60d2ad1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: book
+    100002: book001
+    100004: book002
+    100006: book003
+    100008: book004
+    100010: book005
+    100012: canvas
+    100014: cat_nest
+    100016: chair_002
+    100018: chair_003
+    100020: chair_004
+    100022: chair_005
+    100024: chair_type2
+    100026: floor
+    100028: flower_pot
+    100030: lava_lamp
+    100032: palette
+    100034: Plane001
+    100036: //RootNode
+    100038: table
+    100040: television
+    100042: toy_mouse
+    100044: tv_stand_furniture
+    100046: wall_&_window
+    400000: book
+    400002: book001
+    400004: book002
+    400006: book003
+    400008: book004
+    400010: book005
+    400012: canvas
+    400014: cat_nest
+    400016: chair_002
+    400018: chair_003
+    400020: chair_004
+    400022: chair_005
+    400024: chair_type2
+    400026: floor
+    400028: flower_pot
+    400030: lava_lamp
+    400032: palette
+    400034: Plane001
+    400036: //RootNode
+    400038: table
+    400040: television
+    400042: toy_mouse
+    400044: tv_stand_furniture
+    400046: wall_&_window
+    2100000: No Name
+    2300000: book
+    2300002: book001
+    2300004: book002
+    2300006: book003
+    2300008: book004
+    2300010: book005
+    2300012: canvas
+    2300014: cat_nest
+    2300016: chair_002
+    2300018: chair_003
+    2300020: chair_004
+    2300022: chair_005
+    2300024: chair_type2
+    2300026: floor
+    2300028: flower_pot
+    2300030: lava_lamp
+    2300032: palette
+    2300034: Plane001
+    2300036: table
+    2300038: television
+    2300040: toy_mouse
+    2300042: tv_stand_furniture
+    2300044: wall_&_window
+    3300000: book
+    3300002: book001
+    3300004: book002
+    3300006: book003
+    3300008: book004
+    3300010: book005
+    3300012: canvas
+    3300014: cat_nest
+    3300016: chair_002
+    3300018: chair_003
+    3300020: chair_004
+    3300022: chair_005
+    3300024: chair_type2
+    3300026: floor
+    3300028: flower_pot
+    3300030: lava_lamp
+    3300032: palette
+    3300034: Plane001
+    3300036: table
+    3300038: television
+    3300040: toy_mouse
+    3300042: tv_stand_furniture
+    3300044: wall_&_window
+    4300000: floor
+    4300002: wall_&_window
+    4300004: table
+    4300006: lava_lamp
+    4300008: flower_pot
+    4300010: chair_type2
+    4300012: canvas
+    4300014: palette
+    4300016: chair_002
+    4300018: cat_nest
+    4300020: book
+    4300022: Plane001
+    4300024: toy_mouse
+    4300026: tv_stand_furniture
+    4300028: television
+    4300030: book001
+    4300032: book002
+    4300034: book003
+    4300036: book004
+    4300038: book005
+    4300040: chair_003
+    4300042: chair_004
+    4300044: chair_005
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
