@@ -12,6 +12,8 @@ public class Cat : MonoBehaviour
     
     public List<Collider> touchingColliders = new List<Collider>();
 
+    public float courageTuning = 0.3f;
+
     [SerializeField]
     private float courage = 0f;
 
@@ -108,7 +110,7 @@ public class Cat : MonoBehaviour
                 yield return new WaitForSeconds(waitTime);
             }
             
-            courage += (Time.time - t);
+            courage += (Time.time - t) * courageTuning;
             courage = Mathf.Clamp(courage, -1f, 1f);
             if (courage > 0.5f)
             {

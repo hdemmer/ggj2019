@@ -174,6 +174,7 @@ public class TheGame : MonoBehaviour
             var d = Mathf.Abs(timeline - targetTimeline);
             d -= 1f;
             if (d < 0f) d = 0f;
+            if (timeline > targetTimeline) d = 0f;
             res += d;
         }
 
