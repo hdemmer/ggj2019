@@ -13,6 +13,8 @@ public class TheGame : MonoBehaviour
     public float timeline;
     public const int LIVES = 9;
 
+    public AnimationCurve fadeCurve;
+
     private static TheGame _instance;
     public static TheGame Instance
     {
@@ -82,15 +84,16 @@ public class TheGame : MonoBehaviour
 
     public float CurrentFade(int startTimeline, int endTimeline)
     {
-        var opacity = 1f;
+        var t = 1f;
         if (timeline <= startTimeline)
         {
-            opacity = 1f - Mathf.Clamp01(startTimeline - timeline);
+            t = 1f - Mathf.Clamp01(startTimeline - timeline);
         } else if (timeline >= endTimeline)
         {
-            opacity = 1f - Mathf.Clamp01(timeline - endTimeline);
+            t = 1f - Mathf.Clamp01(timeline - endTimeline);
         }
 
-        return opacity;
+        return fadeCurve.Evaluate(t);
+
     }
 }
