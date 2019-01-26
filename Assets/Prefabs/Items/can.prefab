@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 2989047628471156149}
   - component: {fileID: 6077174417164151592}
   - component: {fileID: 6157935354115636250}
+  - component: {fileID: 1481978178572300137}
   m_Layer: 0
-  m_Name: can 1
+  m_Name: can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,6 +95,23 @@ MonoBehaviour:
   startTimeline: 9
   endTimeline: 9
   opacity: 0
+--- !u!114 &1481978178572300137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402426274183076017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100006, guid: 8dd0fca0fe92e4336a8107c3d5afc0a1, type: 3}
+  glitch: 0
+  disapear: 0
+  maxGridSize: 0.2
+  glitchNoise: 0
 --- !u!1 &8430538960822030168
 GameObject:
   m_ObjectHideFlags: 0
