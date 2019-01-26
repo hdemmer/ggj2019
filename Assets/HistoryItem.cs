@@ -8,6 +8,9 @@ public class HistoryItem : MonoBehaviour
     public int startTimeline = 9;
     public int endTimeline = 9;
     private GlitchController gc;
+
+    [SerializeField]
+    private float opacity = 0f;
     
     private void OnEnable()
     {
@@ -34,7 +37,14 @@ public class HistoryItem : MonoBehaviour
             var opacity = TheGame.Instance.CurrentFade(startTimeline, endTimeline);
 
 			gc.disapear = 1f - opacity;
-            
+
+			this.opacity = opacity;
+		}
         }
+    }
+
+    public float GetOpacity()
+    {
+        return opacity;
     }
 }

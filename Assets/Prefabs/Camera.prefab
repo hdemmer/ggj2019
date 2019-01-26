@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5333452693490873223}
   - component: {fileID: 5333452693490873241}
   - component: {fileID: 5333452693490873222}
-  - component: {fileID: 5333452693490873220}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -91,21 +90,6 @@ MonoBehaviour:
   m_SoftZoneHeight: 0.8
   m_BiasX: -0.01100049
   m_BiasY: 0
---- !u!114 &5333452693490873220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333452693490873243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NoiseProfile: {fileID: 11400000, guid: 554b0ed52734c154eab51f6cedd3a7d7, type: 2}
-  m_AmplitudeGain: 0.5
-  m_FrequencyGain: 1
 --- !u!1 &5333452694759639787
 GameObject:
   m_ObjectHideFlags: 0
