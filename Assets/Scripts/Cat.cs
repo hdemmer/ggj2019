@@ -153,8 +153,8 @@ public class Cat : MonoBehaviour
 
         var targetPos = target.transform.position;
         var offset = (targetPos * -1f).normalized;
-        if (offset.x < 0f) offset.x = 0.5f;
-        if (offset.z < 0f) offset.z = 0.5f;
+        //if (offset.x < 0f) offset.x = 0.5f;
+        //if (offset.z < 0f) offset.z = 0.5f;
         var destination = targetPos + offset;
         destination.y = 0f;
         if (!nma.SetDestination(destination))
@@ -182,6 +182,8 @@ public class Cat : MonoBehaviour
                 }
                 else
                 {
+                    TheGame.Instance.PlayContemplateParticles(target);
+
                     Debug.Log("CONTEMPLATING");
                     yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
                     targets.RemoveAt(0);
