@@ -14,6 +14,7 @@ public class GlitchController : MonoBehaviour
 	public float maxGridSize = .2f;
 	public float glitchNoise;
 	public const float minGridSize = 0.0001f;
+
 	void Update()
 	{
 		if(material != null)

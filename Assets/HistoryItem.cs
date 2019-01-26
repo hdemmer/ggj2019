@@ -7,11 +7,11 @@ public class HistoryItem : MonoBehaviour
 {
     public int startTimeline = 9;
     public int endTimeline = 9;
-    private MeshRenderer mr;
+    private GlitchController gc;
     
     private void OnEnable()
     {
-        mr = GetComponent<MeshRenderer>();
+        gc = GetComponent<GlitchController>();
         TheGame.Instance.items.Add(this);
     }
 
@@ -28,12 +28,12 @@ public class HistoryItem : MonoBehaviour
     void Update()
     {
         var timeline = TheGame.Instance.timeline;
-        if (timeline != previousTimeline)
+        if (timeline != previousTimeline && gc != null)
         {
             previousTimeline = timeline;
             var opacity = TheGame.Instance.CurrentFade(startTimeline, endTimeline);
-            
-            mr.material.color = new Color(1f,1f,1f,opacity);
+
+			gc.disapear = 1f - opacity;
             
         }
     }
