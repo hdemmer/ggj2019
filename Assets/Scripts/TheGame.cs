@@ -37,7 +37,7 @@ public class TheGame : MonoBehaviour
     public Cat cat;
     public CinemachineVirtualCamera vCam;
 
-    private float _previousTimeline;
+    private float _previousTimeline = -1f;
     private bool _isRunning;
 
     private void Awake()
