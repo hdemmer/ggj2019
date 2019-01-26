@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Cat : MonoBehaviour
 {
-    private readonly List<CatItem> targets = new List<CatItem>();
+    public readonly List<CatItem> targets = new List<CatItem>();
     
     private NavMeshAgent nma;
     private Coroutine currentBehaviour;
@@ -32,9 +32,15 @@ public class Cat : MonoBehaviour
 
     public void CallStart()
     {
-        for (var i = 0; i < 10; i++)
+        var allItems = new List<CatItem>( TheGame.Instance.catItems);
+        for (var i = 9; i >= 1; i--)
         {
-            ChooseTarget();
+            var item = allItems.Find((catItem) => catItem.startTimeline == i);
+            if (item != null)
+            {
+                Debug.Log("ADDING " + item);
+                targets.Add(item);
+            }
         }
         Do(Wander());
     }
@@ -56,16 +62,6 @@ public class Cat : MonoBehaviour
         if (hi)
         {
             hi.StopGlitch();
-        }
-    }
-
-    private void ChooseTarget()
-    {
-        var allItems = TheGame.Instance.catItems;
-        if (allItems.Length > 0)
-        {
-            var randomOne = allItems[Random.Range(0, allItems.Length)];
-            QueueItem(randomOne);
         }
     }
 
@@ -130,13 +126,13 @@ public class Cat : MonoBehaviour
         if (targets.Count == 0)
         {
             Debug.Log("SEEK NO ITEM");
+            // TODO: GAME OVER
 
             Do(Wander());
             yield break;
         }
 
         var target = targets[0];
-        targets.RemoveAt(0);
         var targetCollider = target.GetComponent<Collider>();
         Debug.Log("SEEK "+ target);
 
@@ -169,7 +165,7 @@ public class Cat : MonoBehaviour
                 {
                     Debug.Log("CONTEMPLATING");
                     yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
-                    ChooseTarget();
+                    targets.RemoveAt(0);
                     Do(SeekNext());
                 }
 
@@ -177,11 +173,6 @@ public class Cat : MonoBehaviour
             }
             yield return new WaitForSeconds(0.1f);
         }
-    }
-
-    private void QueueItem(CatItem item)
-    {
-        targets.Add(item);
     }
 
     private static Vector3 RandomNavSphere (Vector3 origin, float distance, int layermask) {

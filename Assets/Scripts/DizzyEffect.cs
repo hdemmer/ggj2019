@@ -12,7 +12,7 @@ public class DizzyEffect : MonoBehaviour
 
     private void Update()
     {
-        var dizziness = TheGame.Instance.dizziness;
+        var dizziness = TheGame.Instance.GetTotalDizziness();
         dizziness = Mathf.Clamp01(dizziness) * multiplier;
         target.material.SetFloat("_Distortion", dizziness);
     }

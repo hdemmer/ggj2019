@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using Cinemachine;
@@ -162,5 +163,20 @@ public class TheGame : MonoBehaviour
 
         return fadeCurve.Evaluate(t);
 
+    }
+
+    public float GetTotalDizziness()
+    {
+        var res = dizziness;
+        if (cat.targets.Count > 0)
+        {
+            var targetTimeline = cat.targets[0].startTimeline;
+            var d = Mathf.Abs(timeline - targetTimeline);
+            d -= 1f;
+            if (d < 0f) d = 0f;
+            res += d;
+        }
+
+        return res;
     }
 }
