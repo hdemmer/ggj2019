@@ -188,7 +188,8 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 6d5702dbb72d6474f9230e2fcb994b39, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e60fbe6718eebd44a9ddb41da0b48dfd, type: 2}
+      objectReference: {fileID: 22100000, guid: 0571fcecabfdf904d847c2274a5aca66,
+        type: 2}
     - target: {fileID: 13700000, guid: 6d5702dbb72d6474f9230e2fcb994b39, type: 3}
       propertyPath: m_Bones.Array.data[0]
       value: 
