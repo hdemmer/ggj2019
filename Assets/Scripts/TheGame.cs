@@ -17,6 +17,7 @@ public class TheGame : MonoBehaviour
     public float dizziness = 0f;
     public DizzyEffect dizzyEffect;
     public AnimationCurve dizzyDecay;
+    public ContemplationEffect contemplationPrefab;
 
     public AnimationCurve fadeCurve;
 
@@ -37,11 +38,12 @@ public class TheGame : MonoBehaviour
     public Cat cat;
     public CinemachineVirtualCamera vCam;
 
-    private float _previousTimeline;
+    private float _previousTimeline = -1f;
     private bool _isRunning;
 
     private void Awake()
     {
+        contemplationPrefab.gameObject.SetActive(false);
         slider.value = 1f;
         _instance = this;
         
@@ -114,7 +116,8 @@ public class TheGame : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = _isRunning ? 1f : 0f;
+        var ts = 1f + Mathf.Clamp(GetTotalDizziness()*3f,0f,3f); 
+        Time.timeScale = _isRunning ? ts : 0f;
 
         if (!_isRunning) return;
         
@@ -165,19 +168,37 @@ public class TheGame : MonoBehaviour
 
     }
 
+    private float lowestTimeline = 9f;
     public float GetTotalDizziness()
     {
         var res = dizziness;
         if (cat.targets.Count > 0)
         {
             var targetTimeline = cat.targets[0].startTimeline;
-            var d = Mathf.Abs(timeline - targetTimeline);
+            if (targetTimeline < lowestTimeline)
+            {
+                lowestTimeline = targetTimeline;
+            }
+            var d = Mathf.Abs(timeline - lowestTimeline);
             d -= 1f;
             if (d < 0f) d = 0f;
-            if (timeline > targetTimeline) d = 0f;
+            if (timeline > lowestTimeline) d = 0f;
             res += d;
         }
 
         return res;
+    }
+
+    public void PlayContemplateParticles(CatItem target)
+    {
+        foreach (var gc in target.gcs)
+        {
+            var tr = gc.transform;
+            var c = GameObject.Instantiate(contemplationPrefab, tr, worldPositionStays:false);
+            c.mf.sharedMesh = gc.gameObject.GetComponent<MeshFilter>().sharedMesh;
+            c.gameObject.SetActive(true);
+            c.Play();
+        }
+
     }
 }

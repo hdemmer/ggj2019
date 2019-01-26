@@ -7,7 +7,7 @@ public class HistoryItem : MonoBehaviour
 {
 	public int startTimeline = 9;
 	public int endTimeline = 9;
-	private GlitchController[] gcs = new GlitchController[0];
+	public GlitchController[] gcs = new GlitchController[0];
 
 	[SerializeField]
 	private float opacity = 0f;
