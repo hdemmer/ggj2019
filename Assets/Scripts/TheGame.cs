@@ -86,7 +86,6 @@ public class TheGame : MonoBehaviour
         if (_previousTimeline != timeline)
         {
             var delta = Mathf.Abs(_previousTimeline - timeline);
-            _previousTimeline = timeline;
 
             if (_previousTimeline != -1)
             {
@@ -99,6 +98,7 @@ public class TheGame : MonoBehaviour
             {
                 item.CallUpdate(timeline);
             }
+            _previousTimeline = timeline;
 
         }
     }
