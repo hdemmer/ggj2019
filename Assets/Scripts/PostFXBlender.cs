@@ -9,8 +9,7 @@ public class PostFXBlender : MonoBehaviour
 {
 	public PostProcessVolume volume;
 	[Range(0f, 1f)]
-	public float value;
-	public Range blendingRange, solidRange;
+	public float value, center, range, blending;
 
 	private void Update()
 	{
@@ -19,6 +18,17 @@ public class PostFXBlender : MonoBehaviour
 
 	private void UpdateVolume()
 	{
+		var solidRange = new Range()
+		{
+			min = center - range,
+			max = center + range
+		};
+		var blendingRange = new Range()
+		{
+			min = solidRange.min - blending,
+			max = solidRange.max + blending
+		};
+
 		if(volume == null)
 		{
 			volume = GetComponent<PostProcessVolume>();
@@ -26,23 +36,28 @@ public class PostFXBlender : MonoBehaviour
 		}
 		if (value < blendingRange.min)
 		{
-			volume.priority = 0f;
+			volume.weight = 0f;
+			volume.enabled = false;
 		}
 		else if (value < solidRange.min)
 		{
-			volume.priority = (value - blendingRange.min) / (solidRange.min - blendingRange.min);
+			volume.weight = (value - blendingRange.min) / (solidRange.min - blendingRange.min);
+			volume.enabled = true;
 		}
 		else if (value < solidRange.max)
 		{
-			volume.priority = 1f;
+			volume.weight = 1f;
+			volume.enabled = true;
 		}
 		else if (value < blendingRange.max)
 		{
-			volume.priority = (value - solidRange.max) / (blendingRange.max - solidRange.max);
+			volume.weight = 1f - (value - solidRange.max) / (blendingRange.max - solidRange.max);
+			volume.enabled = true;
 		}
 		else
 		{
-			volume.priority = 0f;
+			volume.weight = 0f;
+			volume.enabled = false;
 		}
 	}
 
