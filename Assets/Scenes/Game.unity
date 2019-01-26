@@ -673,6 +673,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 274973566}
   timeline: 0
+  dizziness: 0
+  dizzyEffect: {fileID: 1454083668}
+  dizzyDecay:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.033691406
+      inSlope: 0.49569377
+      outSlope: 0.49569377
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.44067758
+      value: 0.25213253
+      inSlope: 0.49569374
+      outSlope: 0.49569374
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9989624
+      value: 0.09398833
+      inSlope: -0.01974477
+      outSlope: -0.01974477
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.32017705
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -924,14 +959,36 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5975307036479121586, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
+    - target: {fileID: 5333452694875157901, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333452694875157901, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333452694875157901, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5333452693490873220, guid: c8c69e1bb4a5274468cfe874ce18dc9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8c69e1bb4a5274468cfe874ce18dc9f, type: 3}
+--- !u!114 &1454083668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2470244666830439794, guid: c8c69e1bb4a5274468cfe874ce18dc9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1454083667}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135a42c7e9704dcab67969f0aa871e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1820273659
 GameObject:
   m_ObjectHideFlags: 0
