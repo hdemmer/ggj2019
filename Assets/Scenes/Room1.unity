@@ -275,6 +275,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21913216
       objectReference: {fileID: 0}
+    - target: {fileID: 302545321202748082, guid: c8b40516c35d64cc0821f1434bd184bf,
+        type: 3}
+      propertyPath: startTimeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 302545321202748082, guid: c8b40516c35d64cc0821f1434bd184bf,
+        type: 3}
+      propertyPath: endTimeline
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b40516c35d64cc0821f1434bd184bf, type: 3}
 --- !u!1 &1088831748
@@ -396,6 +406,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: startTimeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: endTimeline
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c95208b6ae964d4c998a6a88f75094a, type: 3}
 --- !u!1001 &1371945731
@@ -470,6 +490,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.047005
       objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: startTimeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: endTimeline
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c95208b6ae964d4c998a6a88f75094a, type: 3}
 --- !u!1001 &1824137365
@@ -543,6 +573,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.897001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: startTimeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303997697657702550, guid: 8c95208b6ae964d4c998a6a88f75094a,
+        type: 3}
+      propertyPath: endTimeline
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c95208b6ae964d4c998a6a88f75094a, type: 3}
