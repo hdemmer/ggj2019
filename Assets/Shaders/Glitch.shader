@@ -55,6 +55,8 @@
 		    half disp = clamp(_Disappear, 0,0.1);
 			v.vertex.xyz -= fmod(v.vertex.xyz, _GridSize);
 			v.vertex.y += disp;
+			v.vertex.x += disp * 0.1f;
+			v.vertex.z += disp * 0.1f;
 		}
 		
         void surf (Input IN, inout SurfaceOutputStandard o)
