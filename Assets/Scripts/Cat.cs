@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Cat : MonoBehaviour
 {
-    private readonly Queue<CatItem> targets = new Queue<CatItem>();
+    private readonly List<CatItem> targets = new List<CatItem>();
     
     private NavMeshAgent nma;
     private Coroutine currentBehaviour;
@@ -135,7 +135,8 @@ public class Cat : MonoBehaviour
             yield break;
         }
 
-        var target = targets.Dequeue();
+        var target = targets[0];
+        targets.RemoveAt(0);
         var targetCollider = target.GetComponent<Collider>();
         Debug.Log("SEEK "+ target);
 
@@ -160,7 +161,8 @@ public class Cat : MonoBehaviour
                 if (opacity < 0.9f)
                 {
                     Debug.Log("ITEM NOT THERE");
-                    courage -= 1f;
+                    targets.Insert(0, target);    // try again later
+                    courage = -1f;
                     Do(Wander());
                 }
                 else
@@ -179,7 +181,7 @@ public class Cat : MonoBehaviour
 
     private void QueueItem(CatItem item)
     {
-        targets.Enqueue(item);
+        targets.Add(item);
     }
 
     private static Vector3 RandomNavSphere (Vector3 origin, float distance, int layermask) {
