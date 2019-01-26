@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TheGame : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class TheGame : MonoBehaviour
 
     private void Awake()
     {
+        SceneManager.LoadScene("RoomObjects", LoadSceneMode.Additive);
         _instance = this;
     }
 

@@ -21,29 +21,22 @@ public class Cat : MonoBehaviour
     }
 
     public State state;
-    
-    private void OnEnable()
+
+    private IEnumerator Start()
     {
         TheGame.Instance.cat = this;
         nma = GetComponent<NavMeshAgent>();
+
+        while (GameObject.FindObjectsOfType<HistoryItem>().Length == 0)
+        {
+            yield return null;
+        }
 
         for (var i = 0; i < 10; i++)
         {
             ChooseTarget();
         }
         Do(Wander());
-    }
-
-    private void OnDisable()
-    {
-        var theGame = TheGame.Instance;
-        if (theGame)
-        {
-            if (theGame.cat == this)
-            {
-                theGame.cat = null;
-            }
-        }
     }
 
     private void ChooseTarget()
