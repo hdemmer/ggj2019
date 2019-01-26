@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b79385426d03d484db19d0f587217894,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -123,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor_walls_windows_attached
+      objectReference: {fileID: 0}
+    - target: {fileID: 30110657022997112, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6880579955035744322, guid: 80461b3874b114285af206189d89164d,
         type: 3}
@@ -261,7 +267,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 4
-  m_Color: {r: 0.23921566, g: 0.56655973, b: 0.6431373, a: 1}
+  m_Color: {r: 1, g: 0.99438584, b: 0.7971698, a: 1}
   m_Intensity: 10.82
   m_Range: 10
   m_SpotAngle: 30
@@ -296,13 +302,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875071551}
-  m_LocalRotation: {x: 0.48060903, y: 0.0021380302, z: -0.75914323, w: 0.4389898}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.3679874, y: 0.31045595, z: -0.86554337, w: 0.13797522}
+  m_LocalPosition: {x: 4.91, y: 7.17, z: -5.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 154.836, y: 126.472, z: 47.233994}
+  m_LocalEulerAnglesHint: {x: 140.285, y: 134.213, z: 0.7719879}
 --- !u!1001 &2171591717769060193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -314,6 +320,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kid_playhouse
+      objectReference: {fileID: 0}
+    - target: {fileID: 869243728223030522, guid: 3c1cb2dc80fb548c8bb68cb31094325d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7098205201408360817, guid: 3c1cb2dc80fb548c8bb68cb31094325d,
         type: 3}
@@ -384,6 +395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid_babyPacifier
       objectReference: {fileID: 0}
+    - target: {fileID: 4674220014378322634, guid: 74e112f2de41444988fbfe129f87d122,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8241364086680387915, guid: 74e112f2de41444988fbfe129f87d122,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -452,6 +468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kid_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 8996937533131319579, guid: 1ad4113507ae64dadb64946d91b55879,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2349079843753588042, guid: 1ad4113507ae64dadb64946d91b55879,
         type: 3}
@@ -522,6 +543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid_small table
       objectReference: {fileID: 0}
+    - target: {fileID: 5459983694198491026, guid: 09463b4c4fdf44754829f72e14d6e6ae,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1208173647068466139, guid: 09463b4c4fdf44754829f72e14d6e6ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -590,6 +616,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kid_kitty playbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6009151520331835309, guid: 8394a17d5820a43f6bb68789a8714e4d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8889359651905727940, guid: 8394a17d5820a43f6bb68789a8714e4d,
         type: 3}
@@ -660,6 +691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid_baby bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 77169141439509746, guid: d45bd866280e34a728b08f43f0dd95cc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2939966918739518093, guid: d45bd866280e34a728b08f43f0dd95cc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,6 +764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kid_cat toy cylinder
+      objectReference: {fileID: 0}
+    - target: {fileID: 3734210728275749657, guid: 320731f18990144388b95c9ceee72560,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7407784932982755520, guid: 320731f18990144388b95c9ceee72560,
         type: 3}
@@ -798,6 +839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kid_house of cat
       objectReference: {fileID: 0}
+    - target: {fileID: 5496611043522361298, guid: 203574eb51db84e4ea534c403069d948,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 643369915621481126, guid: 203574eb51db84e4ea534c403069d948,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -866,6 +912,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kid_couch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109536771686108167, guid: 08d11bc67ba944b5782b4531ab0beb2e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7464925012405359547, guid: 08d11bc67ba944b5782b4531ab0beb2e,
         type: 3}
