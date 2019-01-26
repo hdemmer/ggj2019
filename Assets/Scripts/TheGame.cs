@@ -118,7 +118,7 @@ public class TheGame : MonoBehaviour
         if (!_isRunning) return;
         
         var val = slider.value;
-        timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
+        timeline = 1 + Mathf.Clamp01(val) * (LIVES - 1);
 
         dizziness -= dizzyDecay.Evaluate(dizziness) * Time.deltaTime;
         if (dizziness < 0f) dizziness = 0f;
