@@ -13,6 +13,10 @@ public class TheGame : MonoBehaviour
     public float timeline;
     public const int LIVES = 9;
 
+    public float dizziness = 0f;
+    public DizzyEffect dizzyEffect;
+    public AnimationCurve dizzyDecay;
+
     public AnimationCurve fadeCurve;
 
     private static TheGame _instance;
@@ -32,6 +36,7 @@ public class TheGame : MonoBehaviour
     public Cat cat;
     public CinemachineVirtualCamera vCam;
 
+    private float _previousTimeline;
     private bool _isRunning;
 
     private void Awake()
@@ -69,15 +74,32 @@ public class TheGame : MonoBehaviour
 
     void Update()
     {
-        if (_isRunning)
-        {
-            timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
-        }
-
         Time.timeScale = _isRunning ? 1f : 0f;
-        foreach (var item in items)
+
+        if (!_isRunning) return;
+        
+        timeline = 1 + Mathf.Clamp01(slider.value) * (LIVES - 1);
+
+        dizziness -= dizzyDecay.Evaluate(dizziness) * Time.deltaTime;
+        if (dizziness < 0f) dizziness = 0f;
+            
+        if (_previousTimeline != timeline)
         {
-            item.CallUpdate(timeline);
+            var delta = Mathf.Abs(_previousTimeline - timeline);
+            _previousTimeline = timeline;
+
+            if (_previousTimeline != -1)
+            {
+                dizziness += Mathf.Clamp(delta - Time.deltaTime,0f,5f) * 0.1f;
+            }
+
+            dizziness = Mathf.Clamp01(dizziness);
+            
+            foreach (var item in items)
+            {
+                item.CallUpdate(timeline);
+            }
+
         }
     }
 
