@@ -204,8 +204,8 @@ GameObject:
   - component: {fileID: 5333452694875157900}
   - component: {fileID: 5333452694875157903}
   - component: {fileID: 5333452694875157898}
-  - component: {fileID: 8198607357743334892}
   - component: {fileID: 5975307036479121586}
+  - component: {fileID: 6099000572103565676}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -220,8 +220,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5333452694875157902}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.0021317524, y: 0.7317853, z: -0.52282125, w: -0.43719983}
+  m_LocalPosition: {x: 18.77594, y: 13.669836, z: 32.23026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5333452694759639784}
@@ -309,19 +309,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &8198607357743334892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333452694875157902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 1a5d71ca17f5299438236384f4bb4598, type: 2}
 --- !u!114 &5975307036479121586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,3 +322,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 147c630603b4f264495ff71bd701b606, type: 2}
+--- !u!114 &6099000572103565676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333452694875157902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 1a5d71ca17f5299438236384f4bb4598, type: 2}
