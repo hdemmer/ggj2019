@@ -11,6 +11,7 @@
 		_ColorGlitchValue("_ColorGlitchValue", Range(0,1)) = 0.0
 		_ColorGlitch("_ColorGlitch", 2D) = "white" {}
 		_Noise("_Noise", 2D) = "white" {}
+		_Disapear("_Disapear", Range(0,1)) = 0.0
     }
     SubShader
     {
@@ -40,6 +41,7 @@
 		half _ColorGlitchValue;
 		sampler2D _ColorGlitch;
 		sampler2D _Noise;
+		float _Disapear;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -55,17 +57,20 @@
 		
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
+			float surfaceNoise = tex2D(_Noise, IN.uv_MainTex + _Time.xy * .05).r;
+			clip(surfaceNoise - _Disapear);
 			float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
 
 			half screenNoise = tex2D(_Noise, float2(screenUV.x + _Time.x * 2, .5)).r;
 			screenNoise = pow(screenNoise, .6);
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
 			fixed4 glitchC = tex2D(_ColorGlitch, screenUV + float2(0, -_Time.x * .3));
-			c.rgb = lerp(c.rgb, glitchC, step(screenNoise, _ColorGlitchValue * .9));
+			half cgv = step(screenNoise, _ColorGlitchValue * .9);
+			c.rgb = lerp(c.rgb, glitchC, cgv);
             // Final
 			o.Albedo = c.rgb;
-            o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
+            o.Metallic = lerp(_Metallic, 0, cgv);
+            o.Smoothness = lerp(_Glossiness, 0, cgv);
             o.Alpha = c.a;
         }
         ENDCG

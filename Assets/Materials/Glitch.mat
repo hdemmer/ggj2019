@@ -68,12 +68,13 @@ Material:
     - _ColorGlitchValue: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Disapear: 0
     - _DstBlend: 0
     - _GlossMapScale: 1
-    - _Glossiness: 1
+    - _Glossiness: 0.56
     - _GlossyReflections: 1
     - _GridSize: 0.0001
-    - _Metallic: 1
+    - _Metallic: 0.43
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
