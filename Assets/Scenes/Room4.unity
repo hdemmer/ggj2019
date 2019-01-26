@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 24d7240abc4b04041a787d5c3afee4e9,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -123,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: chair_design (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8883061332428104689, guid: ce91f68f230974ab2b2919220e9c07ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8867501759842064252, guid: ce91f68f230974ab2b2919220e9c07ac,
         type: 3}
@@ -192,6 +198,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: minimalist_business_man_scene_puff_sit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177568625147872558, guid: d96a883e9acef4384b029a8b57f26244,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5306304155275114957, guid: d96a883e9acef4384b029a8b57f26244,
         type: 3}
@@ -277,6 +288,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minimalist_business_man_scene_desk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8242343206629442709, guid: 758f804670e644a1b9e160ab996247ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6880405536115826752, guid: 758f804670e644a1b9e160ab996247ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -360,6 +376,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: minimalist_business_man_scene_chair (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6404237436534504731, guid: c6b0625486a894e40b1dc3abfa9e743e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 816467856293182571, guid: c6b0625486a894e40b1dc3abfa9e743e,
         type: 3}
@@ -492,6 +513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: chair_design
       objectReference: {fileID: 0}
+    - target: {fileID: 8883061332428104689, guid: ce91f68f230974ab2b2919220e9c07ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8867501759842064252, guid: ce91f68f230974ab2b2919220e9c07ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,6 +586,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor_walls_windows_attached
+      objectReference: {fileID: 0}
+    - target: {fileID: 30110657022997112, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6880579955035744322, guid: 80461b3874b114285af206189d89164d,
         type: 3}
@@ -720,6 +751,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minimalist_business_man_scene_chair
       objectReference: {fileID: 0}
+    - target: {fileID: 6404237436534504731, guid: c6b0625486a894e40b1dc3abfa9e743e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 816467856293182571, guid: c6b0625486a894e40b1dc3abfa9e743e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -804,6 +840,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: minimalist_business_man_scene_carpet
       objectReference: {fileID: 0}
+    - target: {fileID: 3238783573961188577, guid: 8c8c83a11c9554b818b33540ca0ebf30,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8452286984172371945, guid: 8c8c83a11c9554b818b33540ca0ebf30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -887,6 +928,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: minimalist_business_man_scene_puff_sit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177568625147872558, guid: d96a883e9acef4384b029a8b57f26244,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5306304155275114957, guid: d96a883e9acef4384b029a8b57f26244,
         type: 3}

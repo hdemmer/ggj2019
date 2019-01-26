@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: c1c15ee1c3b2b854780766bed4710983
+guid: 0d147ed190e3e4b81b405b3943ba1c50
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2100000: None
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Box unwrapped
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1

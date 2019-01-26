@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 76a1acf5bd5214e868a36297b683cbd6
+guid: 64ad8a3aae49f43c9b4db00cbb09268c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: wall_&_window_&_floor
+    4300000: Kid_Couch
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,14 +40,14 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
