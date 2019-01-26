@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8712878517228882005}
   - component: {fileID: 4075293707727661438}
   - component: {fileID: 2799955549894101458}
+  - component: {fileID: 6327834555214749970}
   m_Layer: 0
   m_Name: flower_pot
   m_TagString: Untagged
@@ -109,5 +110,19 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
   glitch: 0
   disappear: 0
+  meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!135 &6327834555214749970
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643968937565345181}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.49
+  m_Center: {x: 0, y: 0, z: 0.341628}
