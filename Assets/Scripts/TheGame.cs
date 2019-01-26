@@ -99,13 +99,14 @@ public class TheGame : MonoBehaviour
                 item.CallUpdate(timeline);
             }
 
-            foreach (var historyRoom in historyRooms)
-            {
-                historyRoom.CallUpdate(timeline);
-            }
             _previousTimeline = timeline;
-
         }
+        
+        foreach (var historyRoom in historyRooms)
+        {
+            historyRoom.CallUpdate(timeline, cat);
+        }
+
     }
 
     public float CurrentFade(int startTimeline, int endTimeline)
