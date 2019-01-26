@@ -90,7 +90,7 @@ public class TheGame : MonoBehaviour
 
             if (_previousTimeline != -1)
             {
-                dizziness += delta * 0.1f;
+                dizziness += Mathf.Clamp(delta - Time.deltaTime,0f,5f) * 0.1f;
             }
 
             dizziness = Mathf.Clamp01(dizziness);
