@@ -15,17 +15,26 @@ public class HistoryItem : MonoBehaviour
 	private void OnEnable()
 	{
 		gc = GetComponent<GlitchController>();
+		if (!gc)
+		{
+			gc = gameObject.AddComponent<GlitchController>();
+			gc.material = gameObject.GetComponent<MeshRenderer>().material;
+		}
 	}
 
 	private float previousTimeline = -1;
 	public void CallUpdate(float timeline)
 	{
-		if (timeline != previousTimeline && gc != null)
+		if (timeline != previousTimeline)
 		{
 			previousTimeline = timeline;
 			var opacity = TheGame.Instance.CurrentFade(startTimeline, endTimeline);
 
-			gc.disapear = 1f - opacity;
+			if (gc != null)
+			{
+				gc.disappear = 1f - opacity;
+				gc.CallUpdate();
+			}
 
 			this.opacity = opacity;
 		}
