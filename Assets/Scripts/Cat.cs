@@ -42,11 +42,21 @@ public class Cat : MonoBehaviour
     private void OnTriggerEnter( Collider other)
     {
         touchingColliders.Add(other);
+        var hi = other.GetComponent<HistoryItem>();
+        if (hi)
+        {
+            hi.StartGlitch();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         touchingColliders.Remove(other);
+        var hi = other.GetComponent<HistoryItem>();
+        if (hi)
+        {
+            hi.StopGlitch();
+        }
     }
 
     private void ChooseTarget()
