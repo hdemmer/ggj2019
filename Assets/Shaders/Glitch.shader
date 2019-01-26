@@ -4,6 +4,7 @@
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+		_BumpMap("Bumpmap", 2D) = "bump" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
 
@@ -26,11 +27,14 @@
         #pragma target 3.0
 
         sampler2D _MainTex;
+		sampler2D _BumpMap;
 
         struct Input
         {
             float2 uv_MainTex;
 			float4 screenPos;
+			float2 uv_BumpMap;
+			float2 uv_Noise;
         };
 
         half _Glossiness;
@@ -61,7 +65,7 @@
 		
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-			float surfaceNoise = tex2D(_Noise, IN.uv_MainTex + _Time.xy * .05).r;
+			float surfaceNoise = tex2D(_Noise, IN.uv_Noise + _Time.xy * .05).r;
 			clip(surfaceNoise - _Disappear);
 			float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
 
@@ -76,6 +80,7 @@
             o.Metallic = lerp(_Metallic, 0, cgv);
             o.Smoothness = lerp(_Glossiness, 0, cgv);
             o.Alpha = c.a;
+			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
         }
         ENDCG
     }
