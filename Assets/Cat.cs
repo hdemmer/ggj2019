@@ -131,8 +131,9 @@ public class Cat : MonoBehaviour
 
         while (true)
         {
-            var d = (transform.position - destination).sqrMagnitude;
-            if (d < 0.1f)
+            var d = (transform.position - destination);
+            d.y = 0f;
+            if (d.sqrMagnitude < 0.1f)
             {
                 // there!
                 Debug.Log("THERE");
