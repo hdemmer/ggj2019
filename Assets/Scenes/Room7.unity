@@ -88,7 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000004, guid: 0c08e736893c0450f8c11155ccfc2516,
+  m_LightingDataAsset: {fileID: 112000000, guid: 214a18232d2a3408aaf9ec301c9c9ed3,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -901,6 +901,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1088831750}
     m_Modifications:
+    - target: {fileID: 5061930247082792132, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 30110657022997112, guid: 80461b3874b114285af206189d89164d,
         type: 3}
       propertyPath: m_Name
@@ -965,11 +970,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5061930247082792132, guid: 80461b3874b114285af206189d89164d,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7475859033536145827, guid: 80461b3874b114285af206189d89164d,
         type: 3}
