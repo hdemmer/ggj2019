@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class TheGame : MonoBehaviour
 {
     public Slider slider;
+    public Image sliderBackground;
 
     public float timeline;
     public const int LIVES = 9;
@@ -131,6 +132,7 @@ public class TheGame : MonoBehaviour
         st.RestartGame();
     }
 
+    private float sliderFeather = 1f;
     void Update()
     {
         if (!_isRunning) return;
@@ -144,6 +146,17 @@ public class TheGame : MonoBehaviour
             darkPast = Mathf.Clamp01((lowestTimeline - timeline) - 1);
         }
         am.SetDarkPast(darkPast);
+
+        var sliderTargetFeather = (lowestTimeline - 1) / 9f;
+        var sd = Time.deltaTime * 0.1f;
+        if (sliderTargetFeather < sliderFeather)
+        {
+            sliderFeather -= sd;
+        } else if (sliderTargetFeather > sliderFeather)
+        {
+            sliderFeather += sd;
+        }
+        sliderBackground.material.SetFloat("_Feather", sliderFeather);
         
         var ts = 1f + Mathf.Clamp(dizzy*3f,0f,3f); 
         Time.timeScale = _isRunning ? ts : 0f;
