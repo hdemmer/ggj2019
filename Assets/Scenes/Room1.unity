@@ -1223,6 +1223,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2553836780384841094, guid: c8b40516c35d64cc0821f1434bd184bf,
+        type: 3}
+      propertyPath: startTimeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2553836780384841094, guid: c8b40516c35d64cc0821f1434bd184bf,
+        type: 3}
+      propertyPath: endTimeline
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b40516c35d64cc0821f1434bd184bf, type: 3}
 --- !u!1001 &837278850
@@ -1769,8 +1779,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 837278851}
-  - {fileID: 959830096}
   - {fileID: 896699611}
+  - {fileID: 959830096}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
