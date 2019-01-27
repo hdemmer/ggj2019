@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -182,8 +182,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Michele Battistioli\nAtdhe Bekteshi\nMarco Cuccaro\nHendrik Demmer\nNickolas
-    Marouchos\nKamil Ma\u015Blanka"
+  m_Text: 'Michele Battistioli
+
+    Atdhe Bekteshi
+
+    Marco Cuccaro
+
+    Hendrik Demmer
+
+    Nickolas Marouchos
+
+    Kamil Maslanka'
 --- !u!222 &143337022
 CanvasRenderer:
   m_ObjectHideFlags: 0
