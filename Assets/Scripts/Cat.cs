@@ -35,6 +35,7 @@ public class Cat : MonoBehaviour
 
     public void CallStart()
     {
+        var lastStage = -1;
         var allItems = new List<CatItem>( TheGame.Instance.catItems);
         for (var i = 9; i >= 1; i--)
         {
@@ -49,10 +50,11 @@ public class Cat : MonoBehaviour
                 if (itemsInThisStage.Count > 0)
                 {
                     var pick = itemsInThisStage[Random.Range(0, itemsInThisStage.Count)];
-                    if (!targets.Contains(pick))
+                    if (!targets.Contains(pick) && lastStage != pick.startTimeline)
                     {
                         Debug.Log("ADDING " + pick);
                         targets.Add(pick);
+                        lastStage = pick.startTimeline;
                     }
                 }
             }
@@ -152,9 +154,7 @@ public class Cat : MonoBehaviour
         Debug.Log("SEEK "+ target);
 
         var targetPos = target.transform.position;
-        var offset = (targetPos * -1f).normalized;
-        //if (offset.x < 0f) offset.x = 0.5f;
-        //if (offset.z < 0f) offset.z = 0.5f;
+        var offset = new Vector3(0.8f,0f,0.8f);
         var destination = targetPos + offset;
         destination.y = 0f;
         if (!nma.SetDestination(destination))

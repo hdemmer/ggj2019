@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4886566016461176477
+--- !u!1 &6374209755195484879
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7829872574993141958}
-  - component: {fileID: 1914844717378354681}
-  - component: {fileID: 3246526603048272889}
-  - component: {fileID: 3258927370634385414}
-  - component: {fileID: 1256223767349037699}
+  - component: {fileID: 6757931786459588241}
+  - component: {fileID: 7588159276288460444}
+  - component: {fileID: 7523753783064172422}
+  - component: {fileID: 2030106115189682558}
+  - component: {fileID: 6451187470328668866}
+  - component: {fileID: 8296039419639074238}
   m_Layer: 0
   m_Name: Rocker Punk_speaker
   m_TagString: Untagged
@@ -20,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &7829872574993141958
+--- !u!4 &6757931786459588241
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4886566016461176477}
+  m_GameObject: {fileID: 6374209755195484879}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1.925159, y: 0.512814, z: 1}
@@ -34,21 +35,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1914844717378354681
+--- !u!33 &7588159276288460444
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4886566016461176477}
+  m_GameObject: {fileID: 6374209755195484879}
   m_Mesh: {fileID: 4300000, guid: 5a078a317b8cc45b1be82b47c359c0eb, type: 3}
---- !u!23 &3246526603048272889
+--- !u!23 &7523753783064172422
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4886566016461176477}
+  m_GameObject: {fileID: 6374209755195484879}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
+  - {fileID: 2100000, guid: 03e7a9c038a3c4f79bde806a9b517aeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,28 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3258927370634385414
+--- !u!114 &2030106115189682558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4886566016461176477}
+  m_GameObject: {fileID: 6374209755195484879}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeline: 8
-  endTimeline: 8
+  startTimeline: 9
+  endTimeline: 9
+  gcs: []
   opacity: 0
---- !u!114 &1256223767349037699
+--- !u!114 &6451187470328668866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4886566016461176477}
+  m_GameObject: {fileID: 6374209755195484879}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
@@ -112,3 +114,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &8296039419639074238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374209755195484879}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.71091014, y: 1.7460421, z: 2.1641848}
+  m_Center: {x: 0.000000059604645, y: -0.00000038743028, z: 0}

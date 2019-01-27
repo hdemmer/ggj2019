@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1331544573291541229
+--- !u!1 &5674970789615301129
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2161033340357073091}
-  - component: {fileID: 5889457066181193343}
-  - component: {fileID: 930607829950888954}
-  - component: {fileID: 302545321202748082}
-  - component: {fileID: 288092453227568545}
+  - component: {fileID: 3575890882032260074}
+  - component: {fileID: 8163540917201412524}
+  - component: {fileID: 1033309908245055424}
+  - component: {fileID: 2553836780384841094}
+  - component: {fileID: 7756407837932075494}
+  - component: {fileID: 8308313216984091499}
   m_Layer: 0
   m_Name: cat_milk_thingy
   m_TagString: Untagged
@@ -20,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &2161033340357073091
+--- !u!4 &3575890882032260074
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331544573291541229}
+  m_GameObject: {fileID: 5674970789615301129}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.13569392, y: 0, z: 0.44861066}
   m_LocalScale: {x: 0.134338, y: 0.134338, z: 0.134338}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5889457066181193343
+--- !u!33 &8163540917201412524
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331544573291541229}
+  m_GameObject: {fileID: 5674970789615301129}
   m_Mesh: {fileID: 4300000, guid: d58370e91dc714d119b6f5b7b549f393, type: 3}
---- !u!23 &930607829950888954
+--- !u!23 &1033309908245055424
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331544573291541229}
+  m_GameObject: {fileID: 5674970789615301129}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +60,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
+  - {fileID: 2100000, guid: 92afb5c580e3f4473b5909d420b8c2d3, type: 2}
+  - {fileID: 2100000, guid: e8acb66981c3c4f59ba3ccefefb5d35d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,13 +81,13 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &302545321202748082
+--- !u!114 &2553836780384841094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331544573291541229}
+  m_GameObject: {fileID: 5674970789615301129}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
@@ -93,14 +95,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 9
   endTimeline: 9
+  gcs: []
   opacity: 0
---- !u!114 &288092453227568545
+--- !u!114 &7756407837932075494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331544573291541229}
+  m_GameObject: {fileID: 5674970789615301129}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
@@ -112,3 +115,16 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
+--- !u!65 &8308313216984091499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674970789615301129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2698817, y: 1.2698821, z: 0.34772417}
+  m_Center: {x: 0.000000029802322, y: -0.00000002980233, z: 0.17386208}

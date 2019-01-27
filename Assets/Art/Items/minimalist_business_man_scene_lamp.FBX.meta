@@ -14,14 +14,18 @@ ModelImporter:
     400006: //RootNode
     400008: wall_&_window
     2100000: No Name
+    2100002: metal
+    2100004: cloth
     2300000: carpet_minimalist_scene
     2300002: Cylinder001
     2300004: floor
     2300006: wall_&_window
+    2300008: //RootNode
     3300000: carpet_minimalist_scene
     3300002: Cylinder001
     3300004: floor
     3300006: wall_&_window
+    3300008: //RootNode
     4300000: floor
     4300002: wall_&_window
     4300004: carpet_minimalist_scene
@@ -31,9 +35,9 @@ ModelImporter:
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -80,7 +84,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.099999994
+    previousCalculatedGlobalScale: 0.19
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
