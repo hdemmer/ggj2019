@@ -132,6 +132,7 @@ public class Cat : MonoBehaviour
                 AudioManager.Instance.PlayCatPurr();
                 courage -= 0.5f;
                 Do(SeekNext());
+                yield break;
             }
         }
     }
@@ -144,7 +145,8 @@ public class Cat : MonoBehaviour
         if (targets.Count == 0)
         {
             Debug.Log("SEEK NO ITEM");
-            // TODO: GAME OVER
+
+            TheGame.Instance.GameOver();
 
             Do(Wander());
             yield break;
@@ -181,6 +183,7 @@ public class Cat : MonoBehaviour
                     targets.Insert(0, target);    // try again later
                     courage = -1f;
                     Do(Wander());
+                    yield break;
                 }
                 else
                 {
@@ -191,9 +194,8 @@ public class Cat : MonoBehaviour
                     yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
                     targets.RemoveAt(0);
                     Do(SeekNext());
+                    yield break;
                 }
-
-                yield break;
             }
             yield return new WaitForSeconds(0.1f);
         }

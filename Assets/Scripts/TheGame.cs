@@ -109,6 +109,8 @@ public class TheGame : MonoBehaviour
         {
             AudioManager.Instance.UseSlider();
         });
+
+        StartScene.Instance.HideLoadingScreen();
     }
 
     private void OnDisable()
@@ -119,8 +121,20 @@ public class TheGame : MonoBehaviour
         }
     }
 
+    public void GameOver()
+    {
+        _isRunning = false;
+        Time.timeScale = 0f;
+        cat.StopAllCoroutines();
+        cat.enabled = false;
+        var st = StartScene.Instance;
+        st.RestartGame();
+    }
+
     void Update()
     {
+        if (!_isRunning) return;
+
         var dizzy = GetTotalDizziness();
         var am = AudioManager.Instance;
         am.SetDizzy(dizzy);
@@ -134,10 +148,16 @@ public class TheGame : MonoBehaviour
         var ts = 1f + Mathf.Clamp(dizzy*3f,0f,3f); 
         Time.timeScale = _isRunning ? ts : 0f;
 
-        if (!_isRunning) return;
         
         var val = slider.value;
         timeline = 1 + Mathf.Clamp01(val) * (LIVES - 1);
+        
+        // HACK!
+        if (val == 0f)
+        {
+            GameOver();
+            return;
+        }
 
         dizziness -= dizzyDecay.Evaluate(dizziness) * Time.deltaTime;
         if (dizziness < 0f) dizziness = 0f;
