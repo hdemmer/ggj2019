@@ -5,7 +5,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class GlitchController : MonoBehaviour
 {
-	public Material material;
+	public Material[] materials;
 	[Range(0f, 1f)]
 	public float glitch;
 	[Range(0f, 1f)]
@@ -25,20 +25,22 @@ public class GlitchController : MonoBehaviour
 	private float prevDisappear = -1f;
 
 	private float glitchDisappear = 0f;
-	
+
 	public void CallUpdate()
 	{
 		if (prevGlitch != glitch || prevDisappear != disappear)
 		{
 			prevGlitch = glitch;
 			prevDisappear = disappear;
-			
+
 			var glitchValue = Mathf.Clamp01(glitch + disappear * .8f);
-			material.SetFloat(_gridSize,
-				Mathf.Lerp(minGridSize, maxGridSize,
-					glitchValue + glitchValue * (Mathf.PerlinNoise(3f, Time.time * 8) * 2f - 1f) * glitchNoise));
-			material.SetFloat(_colorGlitchValue, glitchValue);
-			material.SetFloat(_disappear, disappear + glitchDisappear);
+			var gridSize = Mathf.Lerp(minGridSize, maxGridSize, glitchValue + glitchValue * (Mathf.PerlinNoise(3f, Time.time * 8) * 2f - 1f) * glitchNoise);
+			foreach (Material material in materials)
+			{
+				material.SetFloat(_gridSize, gridSize);
+				material.SetFloat(_colorGlitchValue, glitchValue);
+				material.SetFloat(_disappear, disappear + glitchDisappear);
+			}
 			meshR.enabled = (disappear < 1f);
 		}
 	}
@@ -76,8 +78,11 @@ public class GlitchController : MonoBehaviour
 			t = Mathf.Clamp01(t);
 
 			glitchDisappear = t * 0.5f;
-			
-			material.SetFloat(_disappear, disappear + glitchDisappear);
+
+			foreach (Material material in materials)
+			{
+				material.SetFloat(_disappear, disappear + glitchDisappear);
+			}
 			yield return null;
 		}
 	}
@@ -87,7 +92,10 @@ public class GlitchController : MonoBehaviour
 		while (glitchDisappear > 0.01f)
 		{
 			glitchDisappear -= Time.deltaTime;
-			material.SetFloat(_disappear, disappear + glitchDisappear);
+			foreach (Material material in materials)
+			{
+				material.SetFloat(_disappear, disappear + glitchDisappear);
+			}
 			yield return null;
 		}
 	}

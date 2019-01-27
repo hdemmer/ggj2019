@@ -54,8 +54,8 @@ Shader "Custom/RoomGlitch"
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
             // Final
 			o.Albedo = c.rgb;
-//            o.Metallic = lerp(_Metallic, 0, cgv);
-  //          o.Smoothness = lerp(_Glossiness, 0, cgv);
+         o.Metallic = _Metallic;
+         o.Smoothness = _Glossiness;
             o.Alpha = c.a;
         }
         ENDCG

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2288418020496119796}
   - component: {fileID: 7388922545372908789}
   - component: {fileID: 3052968612915448271}
+  - component: {fileID: 6800693179417169923}
   m_Layer: 0
   m_Name: LightShaft
   m_TagString: Untagged
@@ -92,3 +93,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6800693179417169923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2931171667739098802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d42cfd75a2cee746887d72d36c06729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 0.5
+  from: {x: 0, y: 0, z: 0}
+  to: {x: 0, y: 0, z: 0}

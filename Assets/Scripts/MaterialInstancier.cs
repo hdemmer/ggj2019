@@ -9,11 +9,15 @@ public class MaterialInstancier : MonoBehaviour
 		var mr = GetComponent<MeshRenderer>();
 		if(mr != null)
 		{
-			var mat = mr.sharedMaterial = new Material(mr.sharedMaterial);
+			var mats = new Material[mr.sharedMaterials.Length];
+			for(int i = 0; i < mats.Length; i++)
+			{
+				mats[i] = mr.sharedMaterials[i] = new Material(mr.sharedMaterials[i]);
+			}
 			var glitch = GetComponent<GlitchController>();
 			if(glitch != null)
 			{
-				glitch.material = mat;
+				glitch.materials = mats;
 			}
 		}
 		Destroy(this);
