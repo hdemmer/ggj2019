@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
 	public AudioSource darkPastSource;
 	public AudioSource sliderSource;
 
+	public float MAX_MUSIC = 0.2f;
+
 	private static AudioManager _instance;
 
 	public static AudioManager Instance => _instance;
@@ -69,6 +71,8 @@ public class AudioManager : MonoBehaviour
 
 			vol = Mathf.Clamp01(vol);
 			source.volume = vol;
+
+			musicSource.volume = (1f - vol) * MAX_MUSIC;
 		}
 	}
 	
@@ -117,6 +121,7 @@ public class AudioManager : MonoBehaviour
 
 		darkPastSource.volume = 0f;
 		sliderSource.volume = 0f;
+		musicSource.volume = MAX_MUSIC;
 		catSource.Stop();
 	}
 }
