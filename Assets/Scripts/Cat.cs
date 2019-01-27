@@ -129,6 +129,7 @@ public class Cat : MonoBehaviour
             courage = Mathf.Clamp(courage, -1f, 1f);
             if (courage > 0.5f)
             {
+                AudioManager.Instance.PlayCatPurr();
                 courage -= 0.5f;
                 Do(SeekNext());
             }
@@ -175,6 +176,7 @@ public class Cat : MonoBehaviour
                 var opacity = target.GetOpacity();
                 if (opacity < 0.9f)
                 {
+                    AudioManager.Instance.PlayCatConfused();
                     Debug.Log("ITEM NOT THERE");
                     targets.Insert(0, target);    // try again later
                     courage = -1f;
@@ -182,6 +184,7 @@ public class Cat : MonoBehaviour
                 }
                 else
                 {
+                    AudioManager.Instance.PlayCatContemplate();
                     TheGame.Instance.PlayContemplateParticles(target);
 
                     Debug.Log("CONTEMPLATING");

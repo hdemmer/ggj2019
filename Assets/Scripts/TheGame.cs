@@ -104,6 +104,11 @@ public class TheGame : MonoBehaviour
         vCam.enabled = true;
         cat.CallStart();
         _isRunning = true;
+        
+        slider.onValueChanged.AddListener((v) =>
+        {
+            AudioManager.Instance.UseSlider();
+        });
     }
 
     private void OnDisable()
@@ -116,7 +121,17 @@ public class TheGame : MonoBehaviour
 
     void Update()
     {
-        var ts = 1f + Mathf.Clamp(GetTotalDizziness()*3f,0f,3f); 
+        var dizzy = GetTotalDizziness();
+        var am = AudioManager.Instance;
+        am.SetDizzy(dizzy);
+        var darkPast = 0f;
+        if (timeline < lowestTimeline - 1f)
+        {
+            darkPast = Mathf.Clamp01((lowestTimeline - timeline) - 1);
+        }
+        am.SetDarkPast(darkPast);
+        
+        var ts = 1f + Mathf.Clamp(dizzy*3f,0f,3f); 
         Time.timeScale = _isRunning ? ts : 0f;
 
         if (!_isRunning) return;
