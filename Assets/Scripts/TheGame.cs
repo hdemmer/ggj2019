@@ -152,13 +152,6 @@ public class TheGame : MonoBehaviour
         var val = slider.value;
         timeline = 1 + Mathf.Clamp01(val) * (LIVES - 1);
         
-        // HACK!
-        if (val == 0f)
-        {
-            GameOver();
-            return;
-        }
-
         dizziness -= dizzyDecay.Evaluate(dizziness) * Time.deltaTime;
         if (dizziness < 0f) dizziness = 0f;
             

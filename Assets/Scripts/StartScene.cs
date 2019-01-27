@@ -104,6 +104,8 @@ public class StartScene : MonoBehaviour
         yield return ShowLoadingScreen();
         menuScreen.gameObject.SetActive(true);
         yield return SceneManager.LoadSceneAsync("Empty", LoadSceneMode.Single);
+        yield return null;
+        yield return Resources.UnloadUnusedAssets();
         Time.timeScale = 1f;
         yield return HideLoadingScreen();
         button.enabled = true;
