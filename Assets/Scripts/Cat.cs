@@ -94,7 +94,6 @@ public class Cat : MonoBehaviour
 
     private void Do(IEnumerator action)
     {
-        Stop();
         currentBehaviour = StartCoroutine(action);
     }
 
@@ -180,7 +179,6 @@ public class Cat : MonoBehaviour
                 {
                     AudioManager.Instance.PlayCatConfused();
                     Debug.Log("ITEM NOT THERE");
-                    targets.Insert(0, target);    // try again later
                     courage = -1f;
                     Do(Wander());
                     yield break;
@@ -191,8 +189,9 @@ public class Cat : MonoBehaviour
                     TheGame.Instance.PlayContemplateParticles(target);
 
                     Debug.Log("CONTEMPLATING");
-                    yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
                     targets.RemoveAt(0);
+                    nma.destination = transform.position;
+                    yield return new WaitForSeconds(Random.Range(1.5f, 2f)); // contemplate
                     Do(SeekNext());
                     yield break;
                 }
