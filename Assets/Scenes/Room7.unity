@@ -254,11 +254,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5061930247082792132, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475859033536145827, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475859033536145827, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280160877780269618, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: startTimeline
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280160877780269618, guid: 80461b3874b114285af206189d89164d,
+        type: 3}
+      propertyPath: endTimeline
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80461b3874b114285af206189d89164d, type: 3}
 --- !u!4 &1028021943 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6880579955035744322, guid: 80461b3874b114285af206189d89164d,
+  m_CorrespondingSourceObject: {fileID: 7475859033536145827, guid: 80461b3874b114285af206189d89164d,
     type: 3}
   m_PrefabInstance: {fileID: 1028021942}
   m_PrefabAsset: {fileID: 0}
@@ -293,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeline: 7
   endTimeline: 7
+  gcs: []
   opacity: 0
 --- !u!4 &1088831750
 Transform:

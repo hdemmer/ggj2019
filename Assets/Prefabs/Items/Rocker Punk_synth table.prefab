@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1191006612294317287
+--- !u!1 &5824325009141054347
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5924375051291115587}
-  - component: {fileID: 6537210798681425833}
-  - component: {fileID: 2001191301507515649}
-  - component: {fileID: 1932176561631963918}
-  - component: {fileID: 6590099728480458133}
-  - component: {fileID: 3201756276870646199}
+  - component: {fileID: 3283657629975721244}
+  - component: {fileID: 8634663545235114796}
+  - component: {fileID: 6511063076574340060}
+  - component: {fileID: 2991939651581605685}
+  - component: {fileID: 6645549807559187151}
+  - component: {fileID: 2679923303054282567}
   m_Layer: 0
   m_Name: Rocker Punk_synth table
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &5924375051291115587
+--- !u!4 &3283657629975721244
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
+  m_GameObject: {fileID: 5824325009141054347}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.405347, z: 1}
@@ -35,21 +35,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6537210798681425833
+--- !u!33 &8634663545235114796
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
+  m_GameObject: {fileID: 5824325009141054347}
   m_Mesh: {fileID: 4300000, guid: 77af3536fd35c400e902975a40708322, type: 3}
---- !u!23 &2001191301507515649
+--- !u!23 &6511063076574340060
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
+  m_GameObject: {fileID: 5824325009141054347}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
+  - {fileID: 2100000, guid: fdf6d85ba9069473e9f0183a3e9a2918, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,13 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1932176561631963918
+--- !u!114 &2991939651581605685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
+  m_GameObject: {fileID: 5824325009141054347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeline: 9
+  endTimeline: 9
+  gcs: []
+  opacity: 0
+--- !u!114 &6645549807559187151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824325009141054347}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
@@ -98,29 +114,13 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
---- !u!114 &6590099728480458133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f80da3348cdde4650b905aa7c6dbfc88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTimeline: 8
-  endTimeline: 8
-  gcs: []
-  opacity: 0
---- !u!65 &3201756276870646199
+--- !u!65 &2679923303054282567
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191006612294317287}
+  m_GameObject: {fileID: 5824325009141054347}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

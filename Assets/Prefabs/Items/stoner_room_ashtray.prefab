@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4490019860064335102
+--- !u!1 &7037920760989712929
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3391870123319907451}
-  - component: {fileID: 4664569074069233334}
-  - component: {fileID: 6898379985431851532}
-  - component: {fileID: 3636360127483794515}
-  - component: {fileID: 750753709962682838}
-  - component: {fileID: 298728093361166910}
+  - component: {fileID: 5658943565803530263}
+  - component: {fileID: 8041515037857388042}
+  - component: {fileID: 4407012819914276461}
+  - component: {fileID: 6174594445277175700}
+  - component: {fileID: 386707183219375282}
+  - component: {fileID: 1010812103639509547}
   m_Layer: 0
   m_Name: stoner_room_ashtray
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &3391870123319907451
+--- !u!4 &5658943565803530263
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,21 +35,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4664569074069233334
+--- !u!33 &8041515037857388042
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_Mesh: {fileID: 4300000, guid: 50011625f32b940e99ae5984d6f0f1c0, type: 3}
---- !u!23 &6898379985431851532
+--- !u!23 &4407012819914276461
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23ba25a0886a5ee41b59ac78538638fb, type: 2}
+  - {fileID: 2100000, guid: 19b7783249975411d924e633f3bf3968, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,29 +80,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3636360127483794515
+--- !u!114 &6174594445277175700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b08c5669584640e08d89c8c4d07ad19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeline: 8
-  endTimeline: 8
+  startTimeline: 9
+  endTimeline: 9
   gcs: []
   opacity: 0
---- !u!114 &750753709962682838
+--- !u!114 &386707183219375282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68e8efb0877f3004385b4fd73396edf4, type: 3}
@@ -114,13 +114,13 @@ MonoBehaviour:
   meshR: {fileID: 0}
   maxGridSize: 0.2
   glitchNoise: 0
---- !u!65 &298728093361166910
+--- !u!65 &1010812103639509547
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4490019860064335102}
+  m_GameObject: {fileID: 7037920760989712929}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

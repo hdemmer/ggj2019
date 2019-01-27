@@ -6,15 +6,19 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: body
+    2100004: eyes
+    2100006: ears
+    2100008: tail
     2300000: //RootNode
     3300000: //RootNode
     4300000: toy_mouse
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
