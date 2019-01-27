@@ -13,6 +13,8 @@
 		_ColorGlitch("_ColorGlitch", 2D) = "white" {}
 		_Noise("_Noise", 2D) = "white" {}
 		_Disappear("_Disappear", Range(0,1)) = 0.0
+
+		[HDR]_Emision("_Emision", Color) = (0,0,0,0)
     }
     SubShader
     {
@@ -46,6 +48,7 @@
 		sampler2D _ColorGlitch;
 		sampler2D _Noise;
 		float _Disappear;
+		fixed4 _Emision;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -81,6 +84,7 @@
             o.Smoothness = lerp(_Glossiness, 0, cgv);
             o.Alpha = c.a;
 			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
+			o.Emission = _Emision;
         }
         ENDCG
     }
