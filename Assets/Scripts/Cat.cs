@@ -33,6 +33,16 @@ public class Cat : MonoBehaviour
         GetComponent<Collider>().isTrigger = true;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.O))
+        {
+            StopAllCoroutines();
+            targets.RemoveAt(0);
+            Do(SeekNext());
+        }
+    }
+
     public void CallStart()
     {
         var lastStage = -1;

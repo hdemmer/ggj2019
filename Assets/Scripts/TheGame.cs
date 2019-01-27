@@ -156,6 +156,8 @@ public class TheGame : MonoBehaviour
         {
             sliderFeather += sd;
         }
+
+        sliderFeather = Mathf.Clamp01(sliderFeather);
         sliderBackground.material.SetFloat("_Feather", sliderFeather);
         
         var ts = 1f + Mathf.Clamp(dizzy*3f,0f,3f); 

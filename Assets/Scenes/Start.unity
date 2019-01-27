@@ -476,7 +476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2034375564}
-  gameWonImage: {fileID: 0}
+  gameWonImage: {fileID: 38456769}
   menuScreen: {fileID: 1858696161}
   loadingScreen: {fileID: 1718410045}
 --- !u!4 &1171190164
