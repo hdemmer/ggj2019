@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class StartScene : MonoBehaviour
 {
     public Button button;
+    public GameObject gameWonImage;
     public CanvasGroup menuScreen;
     public CanvasGroup loadingScreen;
 
@@ -100,6 +101,7 @@ public class StartScene : MonoBehaviour
     
     private IEnumerator StartReset()
     {
+        gameWonImage.gameObject.SetActive(true);
         menuScreen.gameObject.SetActive(false);
         yield return ShowLoadingScreen();
         menuScreen.gameObject.SetActive(true);

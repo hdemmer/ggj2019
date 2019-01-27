@@ -422,7 +422,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 96ed9f20daeb04ce4a826a8f646d6045, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3b4ae09242e5b47e4bd7ed96156839cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -951,3 +951,4 @@ MonoBehaviour:
   - {fileID: 4706091513131284539}
   darkPastSource: {fileID: 4706091513231280861}
   sliderSource: {fileID: 4706091513899845647}
+  MAX_MUSIC: 0.7
